@@ -193,7 +193,7 @@ alter table valid_path add index index2(path);
 /* skel.js v2.2.1 | (c) n33 | getskel.com | MIT licensed */
 ```
  
- -*init.js http://templated.co/
+ -[*init.js](http://templated.co/)
 ```
 /*
     Transit by TEMPLATED

@@ -16,11 +16,14 @@
  -`RXxXXX.html` : 반응에 대한 정보가 들어갑니다.
 
 + `C_info_html`
-- `CXXXXX.html` : 해당 컴파운드에 대한 정보가 들어갑니다.
+ 
+ -`CXXXXX.html` : 해당 컴파운드에 대한 정보가 들어갑니다.
 
 + `js`
-- `path.js` : json을 기반으로 network그래프를 그립니다.
-- `search.js` : 자동완성기능을 위해 name_to_C.tsv를 불러들입니다.
+ 
+ -`path.js` : json을 기반으로 network그래프를 그립니다.
+ 
+ -`search.js` : 자동완성기능을 위해 name_to_C.tsv를 불러들입니다.
 
 + `json`
 - `CXXXXX_CXXXX.json` : 경로에 대한 정보를 포함합니다.

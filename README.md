@@ -6,7 +6,7 @@
 ---
 ##installation 설치방법
 ---
-###1. github 우측 하단에 git clone을 통해 다운 받습니다.
+### 1. github 우측 하단에 git clone을 통해 다운 받습니다.
 
 ###2. 다운 받아지는 폴더 구조
 + `CSS` 

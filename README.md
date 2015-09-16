@@ -111,8 +111,15 @@ load data local infile '/your 712 folder/data/before_screening.txt' REPLACE INTO
 alter table valid_path add index index2(path);
 ```
 
+####5. 파일 경로 수정
 
-####5. sample을 통한 테스트 방법
+graph.php의 192번째 줄에 있는 코드 :
+```
+$filepath = "당신의 json이 들어 있는 폴더 경로".$input[1]."_".$output[1].".json";
+```
+당신의 json 폴더 경로를 입력합니다.
+
+####6. sample을 통한 테스트 방법
 + 메인 검색화면 (index.html)에서 
 
 + 화학이름을 검색하고 원하는 물질을 클릭합니다.

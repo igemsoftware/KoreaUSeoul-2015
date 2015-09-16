@@ -119,13 +119,11 @@ alter table valid_path add index index2(path);
 
 + 세미 콜론(;)를 기준으로 뒤엣 것(C number)을 받아 해당하는 json을 부릅니다.
 
++ 그림파일 : 각 화면에서 차지하는 파일들.
 
++ 더 자세한 내용은 API documentation
 
 <p align="center"><img src="http://postfiles15.naver.net/20150825_222/azure0777_1440475809932MJtIA_JPEG/git_hub.jpg?type=w2"></p>
-그림파일 : 각 화면에서 차지하는 파일들.
-
- 
-더 자세한 내용은 API documentation
 
 ---
 ##REQUIREMENT

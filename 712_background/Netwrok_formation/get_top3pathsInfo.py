@@ -4,7 +4,6 @@
 ## output:
 
 ## import modules
- 
 import itertools
 import networkx as nx
 import json

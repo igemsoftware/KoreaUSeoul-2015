@@ -22,7 +22,6 @@
 + `js`
  
  -`path.js` : json을 기반으로 network그래프를 그립니다.
- 
  -`search.js` : 자동완성기능을 위해 name_to_C.tsv를 불러들입니다.
 
 + `json`

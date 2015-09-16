@@ -40,7 +40,7 @@
  -(C number)_(C number).tsv` `(start compound)_(end compound).tsv : 경로 내에서 반응이 진행됨에 따라 변화량을 담고 있는 tsv
 + `graph.php` : 사용자가 입력한 값을 받아 json, js, tsv, mySQL을 통해 결과를 표시합니다. 
 
- -index.html
++ `index.html`
 
 ####3. 테스트를 위한 sample다운받으면 안에 존재하는 (검색 가능한, 테스트할 수 있는) 경로
 
@@ -133,23 +133,22 @@ alter table valid_path add index index2(path);
 ####'길'에 포함되는 library
 + css
 
- -[*font_awesome.min.css](https://fortawesome.github.io/Font-Awesome/get-started/)
+ -[font_awesome.min.css](https://fortawesome.github.io/Font-Awesome/get-started/)
  
- -[*introLoader.min.css](http://factory.brainleaf.eu/jqueryIntroLoader/)
+ -[introLoader.min.css](http://factory.brainleaf.eu/jqueryIntroLoader/)
  
- -[*bootstarap.css](http://getbootstrap.com/css/)
+ -[bootstarap.css](http://getbootstrap.com/css/)
  
- -[*jennifer.theme.css](https://github.com/seogi1004/jui)
+ -[jennifer.theme.css](https://github.com/seogi1004/jui)
  
- -[*jui.css] 
+ -[jui.css] 
 
 + js
 
- -[*jquery.introloader.pack.min.js](http://factory.brainleaf.eu/jqueryIntroLoader/)
+ -[jquery.introloader.pack.min.js](http://factory.brainleaf.eu/jqueryIntroLoader/)
  
- -[*jui.min.js (jennifer UI)](https://github.com/seogi1004/jui)
+ -[jui.min.js (jennifer UI)/autocomplete.js](https://github.com/seogi1004/jui)
 
- -*autocomplete.js 
 ```
 /**
  Copyright (c) 2014 BrightPoint Consulting, Inc.

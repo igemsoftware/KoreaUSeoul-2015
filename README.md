@@ -7,9 +7,9 @@
 ---
 ##installation 설치방법
 ---
-###1. github 우측 하단에 git clone을 통해 다운 받습니다.
+####1. github 우측 하단에 git clone을 통해 다운 받습니다.
 
-###2. 다운 받아지는 폴더 구조
+####2. 다운 받아지는 폴더 구조
 + `CSS` 
 + `R_info_html`
 
@@ -42,7 +42,7 @@
 
  -index.html
 
-###3. 테스트를 위한 sample다운받으면 안에 존재하는 (검색 가능한, 테스트할 수 있는) 경로
+####3. 테스트를 위한 sample다운받으면 안에 존재하는 (검색 가능한, 테스트할 수 있는) 경로
 
 + C06891 -> C20424
 
@@ -52,7 +52,7 @@
 
 + C02635 -> C04793
 
-###4. mySQL 등록 
+####4. mySQL 등록 
 
 + mySQLdb.txt / before_screening.txt
 
@@ -112,7 +112,7 @@ alter table valid_path add index index2(path);
 ```
 
 
-###5. sample을 통한 테스트 방법
+####5. sample을 통한 테스트 방법
 + 메인 검색화면 (index.html)에서 
 
 + 화학이름을 검색하고 원하는 물질을 클릭합니다.
@@ -130,9 +130,9 @@ alter table valid_path add index index2(path);
 ---
 ##REQUIREMENT
 ---
-###'길'을 만들기 위해 사용한 library
+####'길'을 만들기 위해 사용한 library
 ---
-###'길'에 포함되는 library
+####'길'에 포함되는 library
 + css
 
  -[*font_awesome.min.css](https://fortawesome.github.io/Font-Awesome/get-started/)

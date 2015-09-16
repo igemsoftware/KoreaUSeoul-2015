@@ -79,11 +79,11 @@ showname VARCHAR(255),
 
     );
 
- 2) mySQLdb.txt를 mySQL의  'path_score_table'에 업로드합니다.
+  2) mySQLdb.txt를 mySQL의  'path_score_table'에 업로드합니다.
 load data local infile '/your folder/data/mySQLdb.txt' into table path_score_table IGNORE 1 LINES (path, showname, atp, co2, nadh, nadph, net_name, reaction);
 
 
- 3) database의 용량이 클 경우 웹에서의 속도를 빠르게 하기 위해 index를 설정합니다.
+  3) database의 용량이 클 경우 웹에서의 속도를 빠르게 하기 위해 index를 설정합니다.
 
 alter table path_score_table add index index1(path);
 

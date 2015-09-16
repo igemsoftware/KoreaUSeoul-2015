@@ -1,6 +1,7 @@
 # KoreaUSeoul-2015
 
 ---
+---
 #712-web
 
 ---
@@ -61,6 +62,7 @@
 
 
 + mySQLdb.txt 업로드 방법
+
  1) 'path_score_table' 라는 이름의 table을 만듭니다.
 
 CREATE TABLE IF NOT EXISTS path_score_table (
@@ -94,7 +96,8 @@ CREATE TABLE IF NOT EXISTS valid_path (
         path VARCHAR(255),
 	number_of_valid VARCHAR(255),
 	PRIMARY KEY (id)
-    );
+    );
+    
  2)before_screening.txt를 mySQL의 'valid_path' table에 업로드 합니다.
 load data local infile '/your 712 folder/data/before_screening.txt' REPLACE INTO TABLE valid_path IGNORE 1 LINES (path, number_of_vaild);
 
@@ -105,7 +108,9 @@ alter table valid_path add index index2(path);
 
 ###5. sample을 통한 테스트 방법
 + 메인 검색화면 (index.html)에서 
+
 + 화학이름을 검색하고 원하는 물질을 클릭합니다.
+
 + 세미 콜론(;)를 기준으로 뒤엣 것(C number)을 받아 해당하는 json을 부릅니다.
 
 

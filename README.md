@@ -103,11 +103,13 @@
     );
 ```    
  2)before_screening.txt를 mySQL의 'valid_path' table에 업로드 합니다.
-load data local infile '/your 712 folder/data/before_screening.txt' REPLACE INTO TABLE valid_path IGNORE 1 LINES (path, number_of_vaild);
-
+```
+    load data local infile '/your 712 folder/data/before_screening.txt' REPLACE INTO TABLE valid_path IGNORE 1 LINES (path,      number_of_vaild);
+```
  3) index를 설정합니다.
-alter table valid_path add index index2(path);
-
+```
+    alter table valid_path add index index2(path);
+```
 
 
 ###5. sample을 통한 테스트 방법

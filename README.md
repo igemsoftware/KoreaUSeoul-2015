@@ -12,7 +12,7 @@
 + `CSS` 
 
 + `R_info_html`
-- `RXxXXX.html` : 반응에 대한 정보가 들어갑니다.
+-`RXxXXX.html` : 반응에 대한 정보가 들어갑니다.
 
 + `C_info_html`
 - `CXXXXX.html` : 해당 컴파운드에 대한 정보가 들어갑니다.

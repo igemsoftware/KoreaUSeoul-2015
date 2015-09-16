@@ -1,0 +1,20 @@
+
+#content{
+  position:absolute;
+  
+display:block;
+background-color:#ffffff;
+  margin-top:32px
+margin-bottom:0px;
+padding-left:0em;
+width:100%;
+height:850px;
+
+}
+
+#search{position:static;
+  display:block;
+width:400px;
+background-color:;
+}
+

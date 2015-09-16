@@ -10,11 +10,11 @@
 ####1. github 우측 하단에 git clone을 통해 다운 받습니다.
 
 ####2. 다운 받아지는 폴더 구조
-+ `CSS` 
-+ `R_info_html`
++ `__CSS__` 
++ `__R_info_html__`
 
- -(R number).html : 반응에 대한 정보가 들어갑니다.
-+ `C_info_html`
+ -`(R number).html` : 반응에 대한 정보가 들어갑니다.
++ `__C_info_html__`
  
  -(C number).html : 해당 컴파운드에 대한 정보가 들어갑니다.
 + `js`

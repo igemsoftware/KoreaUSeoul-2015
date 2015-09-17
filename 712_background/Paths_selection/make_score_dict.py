@@ -12,7 +12,7 @@ def main(argv):
         optparse_usage = 'make_score_dict.py -i <input_path> -k <KEGG_reaction_list> -atp <KEGG_ATP_reaction_info> -co2 <KEGG_CO2_reaction_info> -nadh <KEGG_NADH_reaction_info> -nadph <KEGG_NADPH_reaction_info> -o <ouput_name> -r <root_dir>'
         parser = OptionParser(usage=optparse_usage)
         parser.add_option("-i", "--inputpath", action="store", type="string",
-                dest="input_path", help='The input text file of top3 paths of all compound pairs')
+                dest="input_path", help='The input text file of paths of all compound pairs')
 	parser.add_option("-k", "--keggReaction", action="store", type="string",
 		dest="kegg_reaction", help='The input text file including KEGG reaction IDs, compound ID pairs, and E. coli K-12 gene information')
 	parser.add_option("-a", "--atpReactionInfo", action="store", type="string",
@@ -64,6 +64,7 @@ def main(argv):
                 print 'Error : please write output file name that you want'
         if len(args) > 0:
                 output_name += args
+        # Run the function
 	make_file(input_path, output_name, kegg_reaction, atp_reaction_info, co2_reaction_info, nadh_reaction_info, nadph_reaction_info, root_dir)
 
 ### Define function

@@ -22,7 +22,7 @@ If you want to host a seperate copy of the server, Follow the instructions below
 
 
 ---
-#### 1. Download in the [release pages](https://github.com/igemsoftware/KoreaUSeoul-2015/releases) or using "download ZIP" button, in right of github.
+#### 1. Download in the [release pages](https://github.com/igemsoftware/KoreaUSeoul-2015/releases) or using "download ZIP" button, in the right of github.
 
 #### 2. Folder structure
 + __CSS__ 

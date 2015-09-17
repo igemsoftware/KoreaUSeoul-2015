@@ -1,7 +1,6 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function: save each reactions adding variations of NADH.
+## output:'<root_dir>/NADHreaction_compoundPair_change.txt' (Format: : R#####, C#####, C#####, #(change))
 
 ## import modules
 import itertools
@@ -33,7 +32,7 @@ def main(argv):
                 print 'ERROR: please provide proper root direcotory'
         #Run Functions
         print 'START time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
-        make_file(input_NADH)
+        make_file(input_NADH, root_dir)
         print 'END time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
  
 ## define the function#1 to download the information
@@ -53,16 +52,12 @@ def read_file(path):
  
         return txt
 
-## what is your goal(G)?
-G = 'C00004'
-goal = 'NADH'
-
 
 ### read file and parse the information of NADH change
 ### format:(Reaction# , com_from, com_to, NADH change)
-def make_file(input_NADH):
+def make_file(input_NADH,root_dir):
         NADHrn_comp1_comp2 = read_file(input_NADH)
-        output_file = 'NADHreaction_compoundPair_change.txt'
+        output_file = '%s/NADHreaction_compoundPair_change.txt' %(root_dir)
         output = open(output_file, 'w')
  
 	for target in NADHrn_comp1_comp2:

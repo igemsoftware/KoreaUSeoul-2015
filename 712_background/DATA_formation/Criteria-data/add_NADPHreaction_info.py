@@ -1,7 +1,6 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function: save each reactions adding variations of NADPH.
+## output: '<root_dir>/NADPHreaction_compoundPair_change.txt' (Format: : R#####, C#####, C#####, #(change)) 
 
 ## import modules
 import itertools
@@ -33,7 +32,7 @@ def main(argv):
                 print 'ERROR: please provide proper root direcotory'
         #Run Functions
         print 'START time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
-        make_file(input_NADPH)
+        make_file(input_NADPH, root_dir)
         print 'END time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
 
 ## define the function#1 to download the information
@@ -57,9 +56,9 @@ def read_file(path):
 
 ### read file and parse the information of NADPH change
 ### format:(Reaction# , comp_from, comp_to, NADPH change)
-def make_file(input_NADPH):
+def make_file(input_NADPH, root_dir):
         NADPHrn_comp1_comp2 = read_file(input_NADPH)
-        output_file = 'NADPHreaction_compoundPair_change.txt'
+        output_file = '%s/NADPHreaction_compoundPair_change.txt' %(root_dir)
         output = open(output_file, 'w')
  
 	for target in NADPHrn_comp1_comp2:

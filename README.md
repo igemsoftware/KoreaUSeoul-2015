@@ -61,6 +61,11 @@ See API documentation for detailed information.
 + js 
  - [jquery.introloader.pack.min.js](http://factory.brainleaf.eu/jqueryIntroLoader/)
  - [jui.min.js (jennifer UI)/autocomplete.js](https://github.com/seogi1004/jui)
+ - [whole.js](https://github.com/PMSI-AlignAlytics/dimple/wiki)
+ - [skel.min.js](https://github.com/n33/skel)
+ - [init.js](http://templated.co/)
+ - [jquery.battatech.excelexport.js](https://github.com/battatech/battatech_excelexport)
+ - [d3.js](http://d3js.org/)
  - autocomplete.js
 ```
 /**
@@ -89,8 +94,4 @@ See API documentation for detailed information.
  */
 ```
 
- - [whole.js](https://github.com/PMSI-AlignAlytics/dimple/wiki)
- - [skel.min.js](https://github.com/n33/skel)
- - [init.js](http://templated.co/)
- - [jquery.battatech.excelexport.js](https://github.com/battatech/battatech_excelexport)
- - [d3.js](http://d3js.org/)
+

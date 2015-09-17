@@ -1,7 +1,6 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function: save the KEGG reaction list related to NADH.
+## output: 'NADH_reaction_id.txt'
 
 ## import modules
 
@@ -18,13 +17,6 @@ def download_file(path):
 	data_split = data.split('\n')
 
 	return data_split
-
-
-## what is your goal(G)?
-G = 'C000
-goal = 'NADH'
-
-
 
 ### get the reactions concerning NADH and save it
  

@@ -1,7 +1,6 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function: save the KEGG reaction list related to ATP.
+## output: : 'ATP_reaction_id.txt'
 
 ## import modules
 import itertools

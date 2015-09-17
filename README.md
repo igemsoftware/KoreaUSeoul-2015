@@ -114,7 +114,7 @@ Enter Path of your json folder
 + In the main page (index.html),
 
 + Type in the compound and click the one you want.
- - #######Sample for trial
+ - Sample for trial
  - C06891 -> C20424
  - C16653 -> C16656
  - C00805 -> C04793

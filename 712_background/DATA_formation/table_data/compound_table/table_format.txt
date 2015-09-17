@@ -1,0 +1,27 @@
+<link rel="stylesheet" type"text/css" href="../css/style.css"/>
+<link rel="stylesheet" type"text/css" href="../css/skel.css"/>
+<link rel="stylesheet" type"text/css" href="../jui.css"/>
+<link rel="stylesheet" type"text/css" href="../jennifer.theme.css"/>
+<table class="compoundtab" style="undefined;table-layout: fixed;">
+
+        <tr>
+          <td><center>Name</center></td>
+          <td>Formylmethanofuran</td>
+        </tr>
+        <tr>
+          <td><center>Formula</center></td>
+          <td>C35H44N4O16</td>
+        </tr>
+        <tr>
+          <td><center>Exact mass</center></td>
+          <td>776.2752</td>
+        </tr>
+        <tr>
+          <td><center>Mol weight</center></td>
+          <td>776.7411</td>
+        </tr>
+        <tr>
+          <td><center>Structure</center></td>
+          <td><image src="http://www.genome.jp/Fig/compound/C00031.gif" width="150" height="100" ></td>
+        </tr>
+      </table>

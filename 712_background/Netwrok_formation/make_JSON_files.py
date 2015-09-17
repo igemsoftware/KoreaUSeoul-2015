@@ -1,7 +1,6 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function: produce the selected paths of compound pair into JSON files.
+## output: json files that will be created in <root_dir>  (C#####_C#####.json)
 
 # import modules
 from time import strftime
@@ -46,7 +45,7 @@ def main(argv):
 
 	#Run Fuctions
 	print 'START time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
-	make_file(input_path, kegg_reaction, compound_name)
+	make_file(input_path, kegg_reaction, compound_name, root_dir)
 	print 'END time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
 ### Define functions
 def read_file(input_file):
@@ -219,7 +218,7 @@ def format_into_json(paths, pair, dic, dic2, dic3):
 
 #Write the JSON file
 
-def make_file(pathway_link, kegg_reaction, compound_name):
+def make_file(pathway_link, kegg_reaction, compound_name, root_dir):
 	with open(pathway_link) as f_in:
           txt = (line.rstrip() for line in f_in)
           txt = list(line for line in txt if line)
@@ -244,7 +243,7 @@ def make_file(pathway_link, kegg_reaction, compound_name):
         	Dict_reaction, Dict_ecoli = parse_reaction_name(kegg_reaction)
         	Dict_chem_name = parse_compound(compound_name)
         	Dict_json = format_into_json(Paths1, pair, Dict_reaction, Dict_ecoli,Dict_chem_name)
-		f = '%s.json' % (pair)
+		f = '%s/%s.json' % (root_dir, pair)
 		output = open(f, 'w')
         	output.write(json.dumps(Dict_json).replace('}, ', '},\n'))
 		output.close()

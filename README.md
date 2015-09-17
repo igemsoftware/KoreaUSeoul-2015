@@ -5,9 +5,9 @@
 #712
 ##Introduction
 
-Our team introduced a navigation system to the calculation of biological pathway. It calculates the optimal pathway from the start compound to the terminal compound by 4 criteria that we selected.
+Our team introduced a navigation system to the calculation of biological pathway. It calculates the optimal pathway from the source compound to the target compound by 4 criteria that we selected.
 
-'Gil' shows nodes for chemicals and edges for reactions by adopting concept of network. This program can provide pathway which yields products you want from reactants that you can offer.
+'Gil' shows nodes for chemicals and edges for reactions by adopting concept of network. This program can provide pathway which yields products you want from reactants that you can offer. :smile:
 
 
 ##installation
@@ -17,7 +17,8 @@ We used the Web so that users, including ordinary people, can easily access to o
 
 Click [Gil : The pathfinder for Synthetic Biologists](http://compbio.korea.ac.kr/712)
 
-###for end users
+###for developers
+
 If you really want to host a seperate copy of the server,
 [click](https://github.com/igemsoftware/KoreaUSeoul-2015/releases)
 Or Download using git clone, in the bottom right of github.

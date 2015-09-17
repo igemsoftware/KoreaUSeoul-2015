@@ -5,10 +5,9 @@
 #712
 ##Introduction
 
-Our team introduced a navigation system to the calculation of biological pathway. It calculates the optimal pathway from the source compound to the target compound by 4 criteria that we selected.
+Our team introduced a navigation system to the calculation of biological pathway. It calculates the optimal pathway from the source compound to the target compound by 4 criteria that we selected. 'Gil' shows nodes for chemicals and edges for reactions by adopting concept of network. 
 
-'Gil' shows nodes for chemicals and edges for reactions by adopting concept of network. This program can provide pathway which yields products you want from reactants that you can offer. :smile:
-
+This program can provide pathway which yields products you want from reactants that you can offer. :smile:
 
 ##installation
 

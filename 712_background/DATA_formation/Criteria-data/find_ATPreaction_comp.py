@@ -1,7 +1,6 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function: save main C#, C# of each reaction that uses ATP 
+## output: <root_dir>/ ‘ATPreaction_compoundPair.txt’ (Format: R#####, C#####, C#####)
 
 ## import modules
 import itertools
@@ -33,7 +32,7 @@ def main(argv):
                 print 'ERROR: please provide proper root direcotory'
 	#Run Functions
 	print 'START time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
-	make_file(input_ATP)
+	make_file(input_ATP, root_dir)
 	print 'END time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
  
 ## define the function#1 to download the information
@@ -57,9 +56,9 @@ def read_file(path):
 
 ### read file and parse the information
 ### format: (Reaction# , com_from, com_to) 
-def make_file(input_ATP):
+def make_file(input_ATP,root_dir):
 	ATP_rn_name = read_file(input_ATP)
-	output_file = "ATPreaction_compoundPair.txt"
+	output_file = "%s/ATPreaction_compoundPair.txt" %(root_dir)
 	output = open(output_file, 'w')
 	i = 0
 	while i < len(ATP_rn_name):

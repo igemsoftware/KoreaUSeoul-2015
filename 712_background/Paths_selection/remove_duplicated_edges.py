@@ -1,7 +1,7 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function: produce the file that overturns the order of the compound pair and the order of the path.
+## output: The output file name that you want (we recommend the input name to be added ‘_rd’) (format : C#####_C#####  <all paths>)
+
 
 ### Import modules
 import sys, re, os
@@ -40,8 +40,9 @@ def main(argv):
                 print 'Error : please write output file name that you want'
         if len(args) > 0:
                 output_name += args
+        # Run functions
 	Dict_reactions = parse_reaction_name(kegg_reaction) 
-        make_file(input_path, output_name,Dict_reactions)
+        make_file(input_path, output_name,Dict_reactions, root_dir)
 
 
 ### Define functions
@@ -68,10 +69,10 @@ def parse_reaction_name(pathway_link):
               
         return dic
 
-def make_file(input_path, output_name, Dict_reactions):
+def make_file(input_path, output_name, Dict_reactions, root_dir):
 	nx_txt = read_file(input_path)
 	output = ''.join(output_name)
-        output_file = '%s' %(output)
+        output_file = '%s/%s' %(root_dir,output)
 	output_handle = open(output_file, 'w')
 	i = 1
 	for line in nx_txt:

@@ -13,32 +13,32 @@
 + __CSS__ 
 + __R_info_html__
 
- -`(R number).html` : 반응에 대한 정보가 들어갑니다.
+ -`(R number).html` : Information of the reaction.
 + __C_info_html__
  
- -`(C number).html` : 해당 컴파운드에 대한 정보가 들어갑니다.
+ -`(C number).html` : Information of the compound.
 + __js__
  
- -`path.js` : json을 기반으로 network그래프를 그립니다.
+ -`path.js` : : Draws a network graph based on json.
 
- -`search.js` : 자동완성기능을 위해 name_to_C.tsv를 불러들입니다.
+ -`search.js` : Loads ‘name_to_C.tsv’ for auto complete.
  
- -`whole(criteria).js` : 각 기준별로 선정된 경로 내에서 총 변화량을 bar graph를 통해서 보여줍니다.
+ -`whole(criteria).js` : Shows total quantity of change in each selected paths using a bar graph.
 + __json__
 
- -`(C number)_(C number).json` : 경로에 대한 정보를 포함합니다.
+ -`(C number)_(C number).json` : Includes the information of the pathway.
 + __data__
 
- -`mySQLdb.txt` : 전체 경로에 대한 정보를 담고 있는 txt 
+ -`mySQLdb.txt` : txt that contains the information of the whole path. 
 
- -`before_screening.txt` : 총 경로 계산결과를 담고 있는 txt
+ -`before_screening.txt` : txt that contains the calculation result of the whole path.
 
- -`name_to_C.tsv` : 자동완성기능을 위한 tsv 
+ -`name_to_C.tsv` : : tsv for auto complete. 
 
  -`data/tsv`
 
- -`(C number)_(C number).tsv` `(start compound)_(end compound).tsv` : 경로 내에서 반응이 진행됨에 따라 변화량을 담고 있는 tsv
-+ __graph.php__ : 사용자가 입력한 값을 받아 json, js, tsv, mySQL을 통해 결과를 표시합니다. 
+ -`(C number)_(C number).tsv` `(start compound)_(end compound).tsv` : tsv that contains the quantity of change of each reaction.
++ __graph.php__ : Receives the data entered by the user and shows the results through json, js, tsv, mySQL. 
 
 + __index.html__
 
@@ -56,16 +56,16 @@
 
 + mySQLdb.txt / before_screening.txt
 
- -기본 지정 mySQL : miseq.korea.ac.kr
+ -Basic settings mySQL : miseq.korea.ac.kr
 
- -기본 지정 database : igem_712
+ -Basic settings database : igem_712
 
- -기본 지정 table : path_score_table / valid_path
+ -Basic settings table : path_score_table / valid_path
 
 
-+ mySQLdb.txt 업로드 방법
++ •	How to upload mySQLdb.txt
 
- 1) 'path_score_table' 라는 이름의 table을 만듭니다.
+ 1) Create a table named 'path_score_table'.
 ```
 CREATE TABLE IF NOT EXISTS path_score_table (
       id int auto_increment,
@@ -81,19 +81,19 @@ showname VARCHAR(255),
     );
 ```
 
-  2) mySQLdb.txt를 mySQL의  'path_score_table'에 업로드합니다.
+  2) Uploads ‘mySQLdb.tx’ to 'path_score_table' of MySQL
 ```
 load data local infile '/your folder/data/mySQLdb.txt' into table path_score_table IGNORE 1 LINES (path, showname, atp,      co2, nadh, nadph, net_name, reaction);
 ```
 
-  3) database의 용량이 클 경우 웹에서의 속도를 빠르게 하기 위해 index를 설정합니다.
+  3) Set index for faster calculation when the size of the database is massive.
 ```
 alter table path_score_table add index index1(path);
 ```
 
-+ before_screening.txt 업로드 방법
++ •	How to upload before_screening.txt
 
- 1) 'valid_path' table을 만듭니다.
+ 1) Create a 'valid_path' table.
 ```
 CREATE TABLE IF NOT EXISTS valid_path (
     id int auto_increment,
@@ -102,42 +102,39 @@ CREATE TABLE IF NOT EXISTS valid_path (
     PRIMARY KEY (id)
  );
 ```    
- 2)before_screening.txt를 mySQL의 'valid_path' table에 업로드 합니다.
+ 2)Uploads ‘before_screening.txt’ to 'valid_path table’ of MySQL.
 ```
 load data local infile '/your 712 folder/data/before_screening.txt' REPLACE INTO TABLE valid_path IGNORE 1 LINES (path,      number_of_vaild);
 ```
- 3) index를 설정합니다.
+ 3) Set up index.
 ```
 alter table valid_path add index index2(path);
 ```
 
-####5. 파일 경로 수정
+####5. File path modification
 
-graph.php의 192번째 줄에 있는 코드 :
+The code in the line 192 of ‘graph.php’ :
 ```
 $filepath = "당신의 json이 들어 있는 폴더 경로".$input[1]."_".$output[1].".json";
 ```
-당신의 json 폴더 경로를 입력합니다.
+Enter Path of your json
 
-####6. sample을 통한 테스트 방법
-+ 메인 검색화면 (index.html)에서 
+####6. Trial using a sample
++ In the main page (index.html),
 
-+ 화학이름을 검색하고 원하는 물질을 클릭합니다.
++ Type in the compound and click the one you want.
 
-+ 세미 콜론(;)를 기준으로 뒤엣 것(C number)을 받아 해당하는 json을 부릅니다.
++ Uses the data that comes right after the semicolon( C number) and receives corresponding json data.
 
 + 그림파일 : 각 화면에서 차지하는 파일들.
 
-+ 더 자세한 내용은 API documentation
++ 	See API documentation for detailed information.
 
 <p align="center"><img src="http://postfiles15.naver.net/20150825_222/azure0777_1440475809932MJtIA_JPEG/git_hub.jpg?type=w2"></p>
 
 ---
-##REQUIREMENT
+##Library includes in ‘GIL’
 ---
-####'길'을 만들기 위해 사용한 library
----
-####'길'에 포함되는 library
 + css
 
  -[font_awesome.min.css](https://fortawesome.github.io/Font-Awesome/get-started/)
@@ -146,9 +143,9 @@ $filepath = "당신의 json이 들어 있는 폴더 경로".$input[1]."_".$outpu
  
  -[bootstarap.css](http://getbootstrap.com/css/)
  
- -[jennifer.theme.css](https://github.com/seogi1004/jui)
+ -[ jui.css / jennifer.theme.css](https://github.com/seogi1004/jui)
  
- -[jui.css] 
+ 
 
 + js
 

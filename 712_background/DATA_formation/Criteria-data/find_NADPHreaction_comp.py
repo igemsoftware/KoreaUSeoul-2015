@@ -1,7 +1,6 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function: save main C#, C# of each reaction that uses NADPH 
+## output: '<root_dir>/NADPHreaction_compoundPair.txt’ (Format: R#####, C#####, C#####)
 
 ## import modules
 import itertools
@@ -33,7 +32,7 @@ def main(argv):
                 print 'ERROR: please provide proper root direcotory'
         #Run Functions
         print 'START time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
-        make_file(input_NADPH)
+        make_file(input_NADPH, root_dir)
         print 'END time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
  
 ## define the function#1 to download the information
@@ -58,7 +57,7 @@ def read_file(path):
 ### format: (Reaction# , com_from, com_to) 
 def make_file(input_NADPH):
         NADPH_rn_name = read_file(input_NADPH)
-        output_file = "NADPHreaction_compoundPair.txt"
+        output_file = "%s/NADPHreaction_compoundPair.txt" %(root_dir)
         output = open(output_file, 'w')
  
 	i = 0

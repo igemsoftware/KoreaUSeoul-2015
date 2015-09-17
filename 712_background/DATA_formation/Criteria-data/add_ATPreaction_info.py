@@ -1,7 +1,6 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function: save each reactions adding variations of ATP.
+## output: '<root_dir>/ATPreaction_compoundPair_change.txt' (Format: : R#####, C#####, C#####, #(change))
 
 ## import modules
 import itertools

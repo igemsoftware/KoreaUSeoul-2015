@@ -13,8 +13,9 @@ for users
 
 for end users
 ---
+#### 1. Download using git clone, in the bottom right of github.
 
-#### 1. Folder structure
+#### 2. Folder structure
 + __CSS__ 
 + __R_info_html__
 
@@ -47,7 +48,7 @@ for end users
 
 + __index.html__
 
-#### 2. Download using git clone, in the bottom right of github.
+
 #### 3. Upload to mySQL server 
 + You must have to build a mysql server. [mySQL](https://www.mysql.com/)
 + mySQLdb.txt / before_screening.txt

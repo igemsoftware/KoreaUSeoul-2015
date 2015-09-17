@@ -33,7 +33,7 @@ def main(argv):
                 print 'ERROR: please provide proper root direcotory'
         #Run Functions
         print 'START time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
-        make_file(input_ATP)
+        make_file(input_ATP, root_dir)
         print 'END time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
 
  
@@ -57,9 +57,9 @@ def read_file(path):
 
 ### read file and parse the information of ATP change
 ### format:(Reaction# , com_from, com_to, ATP change)
-def make_file(input_ATP):
+def make_file(input_ATP, root_dir):
 	ATPrn_comp1_comp2 = read_file(input_ATP)
-	output_file = 'ATPreaction_compoundPair_change.txt'
+	output_file = '%s/ATPreaction_compoundPair_change.txt' %(root_dir)
 	output = open(output_file, 'w')
  
 	for target in ATPrn_comp1_comp2:

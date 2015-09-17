@@ -11,7 +11,7 @@ def main(argv):
         optparse_usage = 'remove_duplicated_edges.py -i <input_path> -k <kegg_reaction_list> -o <ouput_name> -r <root_dir>'
         parser = OptionParser(usage=optparse_usage)
         parser.add_option("-i", "--inputpath", action="store", type="string",
-                dest="input_path", help='The input text file of top3 paths of all compound pairs')
+                dest="input_path", help='The input text file of paths of all compound pairs')
 	parser.add_option("-k", "--keggReaction", action="store", type="string",
 		dest="kegg_reaction", help='The input text file including KEGG reaction IDs, compound ID pairs, and E. coli K-12 gene information')
         parser.add_option("-r", "--rootDir", action="store", type="string",

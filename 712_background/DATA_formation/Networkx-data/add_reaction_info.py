@@ -10,7 +10,7 @@ import itertools
 import urllib2, re, sys
 
 def main(argv):
-	optparse_usage = 'aad_reaction_info.py -i <KEGG_reaction_id> -r <root_dir>'
+	optparse_usage = 'add_reaction_info.py -i <KEGG_reaction_id> -r <root_dir>'
         parser = OptionParser(usage=optparse_usage)
         parser.add_option("-i", "--inputReaction", action="store", type="string",
                 dest="input_reaction", help='The input text file of KEGG reaction id list.') 
@@ -28,10 +28,10 @@ def main(argv):
                 print 'ERROR: please provide proper root direcotory'
         #Run Functions
         print 'START time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
-        make_file(input_reaction)
+        make_file(input_reaction, root_dir)
         print 'END time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
 
-def make_file(input_file):
+def make_file(input_file, root_dir):
 	with open(input_file) as f1_in:
         	txt = (line.rstrip() for line in f1_in)
         	txt =list(line for line in txt if line)
@@ -53,7 +53,7 @@ def make_file(input_file):
 
 
 	#Parse the main pairs from keggrest
-	output_file = open("reaction_compoundPair_eco.txt",'w')
+	output_file = open("%s/reaction_compoundPair_eco.txt" % (root_dir),'w')
 	i = 0
 	while i < len(txt):
 		reaction = txt[i]

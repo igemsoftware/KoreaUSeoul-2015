@@ -51,7 +51,7 @@ See API documentation for detailed information.
 <p align="center"><img src="http://postfiles15.naver.net/20150825_222/azure0777_1440475809932MJtIA_JPEG/git_hub.jpg?type=w2"></p>
 
 ---
-##Library includes in ‘GIL’
+##Library includes in ‘712’
 ---
 + css
  - [font_awesome.min.css](https://fortawesome.github.io/Font-Awesome/get-started/)

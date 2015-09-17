@@ -11,11 +11,10 @@ Our program shows nodes for chemicals and edges for reactions by adopting concep
 
 ##installation
 for users
-우리 712는 웹앱이다 여기를 [클릭](http://compbio.korea.ac.kr/712)하면 이동한다.
+In most cases, you won't care about how to install the server, because we have one that is accessible publicly :smile: The online version is located here.  [클릭](http://compbio.korea.ac.kr/712)하면 이동한다.
 
 for end users
-
-
+If you really want to host a seperate copy of the server, [click](https://github.com/igemsoftware/KoreaUSeoul-2015/releases)
 ---
 #### 1. Download using git clone, in the bottom right of github.
 

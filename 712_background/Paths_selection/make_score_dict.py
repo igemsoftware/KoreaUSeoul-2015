@@ -1,7 +1,7 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function: produce the file that arranges within 3 paths that satisfy each criteria(ATP, CO2, NADH, NADPH)
+## output:The output file name that you want (we recommend the input name to be added ‘_top3’) (format : C#####_C##### ATP(CO2,NADH,NADPH) <top3 paths>)
+
 
 ### Import modules
 import sys, re, os
@@ -64,7 +64,7 @@ def main(argv):
                 print 'Error : please write output file name that you want'
         if len(args) > 0:
                 output_name += args
-	make_file(input_path, output_name, kegg_reaction, atp_reaction_info, co2_reaction_info, nadh_reaction_info, nadph_reaction_info)
+	make_file(input_path, output_name, kegg_reaction, atp_reaction_info, co2_reaction_info, nadh_reaction_info, nadph_reaction_info, root_dir)
 
 ### Define function
 def read_file(input_file):
@@ -105,7 +105,7 @@ def parse_score(input_file):
         return dic
 
 
-def make_file(input_path, output_name, kegg_reaction, atp_reaction_info, co2_reaction_info, nadh_reaction_info, nadph_reaction_info):
+def make_file(input_path, output_name, kegg_reaction, atp_reaction_info, co2_reaction_info, nadh_reaction_info, nadph_reaction_info, root_dir):
         ### run funtions
         D_reaction_name = parse_reaction_name(kegg_reaction)
         D_atp_score = parse_score(atp_reaction_info)
@@ -115,7 +115,7 @@ def make_file(input_path, output_name, kegg_reaction, atp_reaction_info, co2_rea
 	
 	nx_txt = read_file(input_path)
 	output = ''.join(output_name)
-	output_file = '%s' % (output)
+	output_file = '%s/%s' % (root_dir, output)
 	output_handle = open(output_file, 'w')
 
 	i = 1

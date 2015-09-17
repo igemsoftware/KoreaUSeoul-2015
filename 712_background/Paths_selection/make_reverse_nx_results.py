@@ -10,7 +10,7 @@ def main(argv):
 	optparse_usage = 'make_reverse_nx_results.py -i <input_path> -o <output_name> -r <root_dir>'
         parser = OptionParser(usage=optparse_usage)
         parser.add_option("-i", "--inputpath", action="store", type="string",
-                dest="input_path", help='The input text file of top3 paths of all compound pairs')
+                dest="input_path", help='The input text file of paths of all compound pairs')
         parser.add_option("-r", "--rootDir", action="store", type="string",
                 dest="root_dir", help='The root directory. All files are generated here.')
 	parser.add_option("-o", "--outputname", action="store", type="string",

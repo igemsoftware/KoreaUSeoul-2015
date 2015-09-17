@@ -19,9 +19,7 @@ Click [Gil : The pathfinder for Synthetic Biologists](http://compbio.korea.ac.kr
 
 ###for Advanced
 
-If you want to host a seperate copy of the server,
-[click](https://github.com/igemsoftware/KoreaUSeoul-2015/releases)
-and 밑에 사항을 따라하십시오.
+If you want to host a seperate copy of the server, Follow the instructions below:
 
 
 ---

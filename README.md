@@ -5,11 +5,11 @@
 #712-web
 
 ---
-##installation 설치방법
+##installation
 ---
-####1. github 우측 하단에 git clone을 통해 다운 받습니다.
+####Download using git clone, in the bottom right of github.
 
-####2. 다운 받아지는 폴더 구조
+####Folder structure
 + __CSS__ 
 + __R_info_html__
 
@@ -42,7 +42,7 @@
 
 + __index.html__
 
-####3. 테스트를 위한 sample다운받으면 안에 존재하는 (검색 가능한, 테스트할 수 있는) 경로
+####Sample for trial
 
 + C06891 -> C20424
 
@@ -52,7 +52,7 @@
 
 + C02635 -> C04793
 
-####4. mySQL 등록 
+####Upload to mySQL server
 
 + mySQLdb.txt / before_screening.txt
 

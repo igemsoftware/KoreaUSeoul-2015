@@ -5,16 +5,20 @@
 #712
 ##Introduction
 
-Our team got an idea from the navigation system on internet and applied it in our project. If we put department and arrival in the navigation system, it shows various ways when given options such as the fastest way or the most economical way. Our team built a program using database of metabolic pathways named KEGG and visualized the best metabolic network considering thermodynamic aspect.
-Our program shows nodes for chemicals and edges for reactions by adopting concept of network. This program can provide pathway which yields products you want from reactants that you can offer.
+Our team introduced a navigation system to the calculation of biological pathway. It calculates the optimal pathway from the start compound to the terminal compound by 4 criteria that we selected.
+'Gil' shows nodes for chemicals and edges for reactions by adopting concept of network. This program can provide pathway which yields products you want from reactants that you can offer.
 
 
 ##installation
+
 for users
-In most cases, you won't care about how to install the server, because we have one that is accessible publicly :smile: The online version is located here.  [클릭](http://compbio.korea.ac.kr/712)하면 이동한다.
+We used the Web so that users, including ordinary people, can easily access to our software.
+[Gil : The pathfinder for Synthetic Biologists](http://compbio.korea.ac.kr/712)
 
 for end users
-If you really want to host a seperate copy of the server, [click](https://github.com/igemsoftware/KoreaUSeoul-2015/releases)
+If you really want to host a seperate copy of the server,
+[click](https://github.com/igemsoftware/KoreaUSeoul-2015/releases)
+Or Download using git clone, in the bottom right of github.
 ---
 #### 1. Download using git clone, in the bottom right of github.
 

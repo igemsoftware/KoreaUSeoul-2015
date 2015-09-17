@@ -1,8 +1,8 @@
 # KoreaUSeoul-2015
-<p align="center"><img width=300px height=75 src="http://compbio.korea.ac.kr/712/images/engBlack.png"></p>
+<p align="center"><img width=300px height=85 src="http://compbio.korea.ac.kr/712/images/engBlack.png"></p>
 ---
 ---
-#712
+#<p align="left"><img width=300px height=85 src="http://compbio.korea.ac.kr/712/images/gilBlack.png"></p>
 ##Introduction
 
 Our team introduced a navigation system to the calculation of biological pathway. It calculates the optimal pathway from the source compound to the target compound by 4 criteria that we selected. 'Gil' shows nodes for chemicals and edges for reactions by adopting concept of network. 

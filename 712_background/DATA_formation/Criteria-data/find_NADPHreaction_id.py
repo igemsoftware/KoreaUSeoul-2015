@@ -1,10 +1,8 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function:save the KEGG reaction list related to NADPH.
+## output:'NADPH_reaction_id.txt'
 
 ## import modules
-
 import itertools
 import networkx as nx
 import json
@@ -18,11 +16,6 @@ def download_file(path):
 	data_split = data.split('\n')
 
 	return data_split
-
-
-## what is your goal(G)?
-G = 'C00005'
-goal = 'NADPH'
 
 
 ### get the reactions concerning NADPH and ADP and save it

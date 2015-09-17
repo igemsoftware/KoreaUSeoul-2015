@@ -24,7 +24,6 @@ def main(argv):
 	parser.add_option("-r", "--rootDir", action="store", type="string",
                 dest="root_dir", help='The root directory. All files are generated here.')
 
-	output_number = []
 	(options, args) = parser.parse_args()
 	if options.root_dir:
 		root_dir = os.path.abspath(options.root_dir)

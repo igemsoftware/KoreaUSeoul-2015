@@ -22,7 +22,7 @@ If you want to host a seperate copy of the server, Follow the instructions below
 
 
 ---
-#### 1. Download using git clone, in the bottom right of github.
+#### 1. Download using button "download ZIP" or "clone in Desktop", in the bottom right of github.
 
 #### 2. Folder structure
 + __CSS__ 

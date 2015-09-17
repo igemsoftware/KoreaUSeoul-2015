@@ -1,6 +1,6 @@
 ## !/usr/bin/python
 ## function: save main C#, C# of each reaction that uses ATP 
-## output: <root_dir>/ ‘ATPreaction_compoundPair.txt’ (Format: R#####, C#####, C#####)
+## output: '<root_dir>/ATPreaction_compoundPair.txt’ (Format: R#####, C#####, C#####)
 
 ## import modules
 import itertools

@@ -2,16 +2,19 @@
 
 ---
 ---
-#712-web
+#712
+##Introduction
+우리 712는 합성생물학자가 ~하는데 있어서 ~할 수 있게 도와주는 웹 프로그램이다.
 
----
+
 ##installation
 for users
 우리 712는 웹앱이다 여기를 [클릭](http://compbio.korea.ac.kr/712)하면 이동한다.
+
 for end users
-여기서 볼수 있단다.[release](https://github.com/igemsoftware/KoreaUSeoul-2015/releases)
+여기서 볼수 있단다. [release](https://github.com/igemsoftware/KoreaUSeoul-2015/releases)
+
 ---
-####Download using git clone, in the bottom right of github.
 
 ####Folder structure
 + __CSS__ 

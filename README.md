@@ -12,16 +12,16 @@ Our team introduced a navigation system to the calculation of biological pathway
 
 ##installation
 
-###for users
+###for everyone
 We used the Web so that users, including ordinary people, can easily access to our software.
 
 Click [Gil : The pathfinder for Synthetic Biologists](http://compbio.korea.ac.kr/712)
 
-###for developers
+###for Advanced
 
-If you really want to host a seperate copy of the server,
+If you want to host a seperate copy of the server,
 [click](https://github.com/igemsoftware/KoreaUSeoul-2015/releases)
-Or Download using git clone, in the bottom right of github.
+and 밑에 사항을 따라하십시오.
 
 
 ---

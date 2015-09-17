@@ -16,7 +16,7 @@ def main(argv):
 	optparse_usage = 'download_KEGGenzyme.py -r <root_dir>'
 	parser = OptionParser(usage=optparse_usage)
 	parser.add_option("-r", "--rootDir", action="store", type="string",
-		dest="root_dir", help='The root directory. All files are generated here.')
+		dest="root_dir", help='The root directory.You have to write it with new directory. All files are generated here.')
 	(options, args) = parser.parse_args()
 	if options.root_dir:
 		root_dir = os.path.abspath(options.root_dir)

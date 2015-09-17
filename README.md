@@ -4,7 +4,9 @@
 ---
 #712
 ##Introduction
-우리 712는 합성생물학자가 ~하는데 있어서 ~할 수 있게 도와주는 웹 프로그램이다.
+
+Our team got an idea from the navigation system on internet and applied it in our project. If we put department and arrival in the navigation system, it shows various ways when given options such as the fastest way or the most economical way. Our team built a program using database of metabolic pathways named KEGG and visualized the best metabolic network considering thermodynamic aspect.
+Our program shows nodes for chemicals and edges for reactions by adopting concept of network. This program can provide pathway which yields products you want from reactants that you can offer.
 
 
 ##installation

@@ -74,7 +74,7 @@ If you want to host a seperate copy of the server, Follow the instructions below
 CREATE TABLE IF NOT EXISTS path_score_table (
       id int auto_increment,
       path VARCHAR(255)
-showname VARCHAR(255),
+      showname VARCHAR(255),
       atp VARCHAR(255),
       co2 VARCHAR(255),
      nadh VARCHAR(255),

@@ -54,14 +54,14 @@ See API documentation for detailed information.
 ##Library includes in ‘GIL’
 ---
 + css
- -[font_awesome.min.css](https://fortawesome.github.io/Font-Awesome/get-started/)
- -[introLoader.min.css](http://factory.brainleaf.eu/jqueryIntroLoader/)
- -[bootstarap.css](http://getbootstrap.com/css/)
- -[ jui.css / jennifer.theme.css](https://github.com/seogi1004/jui)
-+ js
- -[jquery.introloader.pack.min.js](http://factory.brainleaf.eu/jqueryIntroLoader/)
- -[jui.min.js (jennifer UI)/autocomplete.js](https://github.com/seogi1004/jui)
- -autocomplete.js
+ - [font_awesome.min.css](https://fortawesome.github.io/Font-Awesome/get-started/)
+ - [introLoader.min.css](http://factory.brainleaf.eu/jqueryIntroLoader/)
+ - [bootstarap.css](http://getbootstrap.com/css/)
+ - [ jui.css / jennifer.theme.css](https://github.com/seogi1004/jui)
++ js 
+ - [jquery.introloader.pack.min.js](http://factory.brainleaf.eu/jqueryIntroLoader/)
+ - [jui.min.js (jennifer UI)/autocomplete.js](https://github.com/seogi1004/jui)
+ - autocomplete.js
 ```
 /**
  Copyright (c) 2014 BrightPoint Consulting, Inc.
@@ -89,8 +89,8 @@ See API documentation for detailed information.
  */
 ```
 
- -[*whole.js](https://github.com/PMSI-AlignAlytics/dimple/wiki)
- -[*skel.min.js](https://github.com/n33/skel)
- -[*init.js](http://templated.co/)
- -[jquery.battatech.excelexport.js](https://github.com/battatech/battatech_excelexport)
- -[d3.js](http://d3js.org/)
+ - [whole.js](https://github.com/PMSI-AlignAlytics/dimple/wiki)
+ - [skel.min.js](https://github.com/n33/skel)
+ - [init.js](http://templated.co/)
+ - [jquery.battatech.excelexport.js](https://github.com/battatech/battatech_excelexport)
+ - [d3.js](http://d3js.org/)

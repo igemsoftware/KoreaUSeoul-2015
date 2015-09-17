@@ -1,7 +1,7 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function: produce tsv files corresponding to each compound pair and mySQLdb.txt after adding ATP, CO2, NADH, NADPH, equation data about selected top3 paths.
+## output: 1) tsv files (C#####_C#####.tsv) 2) mySQLdb.txt (that will be created in <root_dir>)
+
 
 ## import modules
 import itertools
@@ -14,7 +14,7 @@ from collections import defaultdict
 from time import strftime
  
 def main(argv):
-        optparse_usage = 'get_top3pathsInfo.py -i <input_path> -k <KEGG_reaction_list> -atp <KEGG_ATP_reaction_info> -co2 <KEGG_CO2_reaction_info> -nadh <KEGG_NADH_reaction_info> -nadph <KEGG_NADPH_reaction_info> -equ <KEGG_equation_info> -r <root_dir>'
+        optparse_usage = 'get_top3pathsInfo.py -i <input_path> -k <KEGG_reaction_list> -a <KEGG_ATP_reaction_info> -c <KEGG_CO2_reaction_info> -d <KEGG_NADH_reaction_info> -p <KEGG_NADPH_reaction_info> -e <KEGG_equation_info> -r <root_dir>'
         parser = OptionParser(usage=optparse_usage)
         parser.add_option("-i", "--inputpath", action="store", type="string",
                 dest="input_path", help='The input text file of top3 paths of all compound pairs')
@@ -34,7 +34,6 @@ def main(argv):
                 dest="root_dir", help='The root directory. All files are generated here.')
 
         (options, args) = parser.parse_args()
-	output_number = []
         if options.root_dir:
                 root_dir = os.path.abspath(options.root_dir)
         else:
@@ -70,7 +69,7 @@ def main(argv):
 	
 	#Run functions
 	print 'START time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
-	make_file(input_path, output_number, kegg_reaction, atp_reaction_info, co2_reaction_info, nadh_reaction_info, nadph_reaction_info, equation_info)
+	make_file(input_path, kegg_reaction, atp_reaction_info, co2_reaction_info, nadh_reaction_info, nadph_reaction_info, equation_info, root_dir)
 	print 'END time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))	
 
 ### Define functions
@@ -312,8 +311,7 @@ def get_equat(dic_path_equat):
         return dic_final
 
 
-def make_file(file_path,output_number, kegg_reaction, atp_reaction_info, co2_reaction_info, nadh_reaction_info, nadph_reaction_info, equation_info):
-	number = ''.join(output_number) 
+def make_file(file_path, kegg_reaction, atp_reaction_info, co2_reaction_info, nadh_reaction_info, nadph_reaction_info, equation_info, root_dir):
         output_file_1 = "mySQLdb.txt" 
  
         output_1 = open(output_file_1,'w')

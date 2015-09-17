@@ -41,9 +41,7 @@ for end users
 
  -`name_to_C.tsv` : : tsv for auto complete. 
 
- -`data/tsv`
-
- -`(C number)_(C number).tsv` `(start compound)_(end compound).tsv` : tsv that contains the quantity of change of each reaction.
+ -`tsv/(C number)_(C number).tsv` `(start compound)_(end compound).tsv` : tsv that contains the quantity of change of each reaction.
 + __graph.php__ : Receives the data entered by the user and shows the results through json, js, tsv, mySQL. 
 
 + __index.html__

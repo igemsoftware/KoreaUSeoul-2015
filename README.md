@@ -114,15 +114,11 @@ Enter Path of your json folder
 + In the main page (index.html),
 
 + Type in the compound and click the one you want.
-####Sample for trial
-
-++ C06891 -> C20424
-
-++ C16653 -> C16656
-
-++ C00805 -> C04793
-
-++ C02635 -> C04793
+ -Sample for trial
+ - C06891 -> C20424
+ - C16653 -> C16656
+ - C00805 -> C04793
+ - C02635 -> C04793
 
 + Uses the data that comes right after the semicolon( C number) and receives corresponding json data.
 

@@ -19,6 +19,8 @@ for end users
 If you really want to host a seperate copy of the server,
 [click](https://github.com/igemsoftware/KoreaUSeoul-2015/releases)
 Or Download using git clone, in the bottom right of github.
+
+
 ---
 #### 1. Download using git clone, in the bottom right of github.
 

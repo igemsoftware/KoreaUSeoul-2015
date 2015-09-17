@@ -148,7 +148,7 @@ See API documentation for detailed information.
  -[jquery.introloader.pack.min.js](http://factory.brainleaf.eu/jqueryIntroLoader/)
  
  -[jui.min.js (jennifer UI)/autocomplete.js](https://github.com/seogi1004/jui)
-
+ -autocomplete.js
 ```
 /**
  Copyright (c) 2014 BrightPoint Consulting, Inc.

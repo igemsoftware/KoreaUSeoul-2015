@@ -1,0 +1,28 @@
+<link rel="stylesheet" type"text/css" href="../css/style.css"/>
+<link rel="stylesheet" type"text/css" href="../css/skel.css"/>
+<link rel="stylesheet" type"text/css" href="../jui.css"/>
+<link rel="stylesheet" type"text/css" href="../jennifer.theme.css"/>
+<body class="jui">
+<table class="compoundtab" style="undefined;table-layout: fixed;">
+<caption><a href="www.kegg.jsp/dbget-bin/www_bget?rn:RXXXXX"></a></caption>
+        <tr>
+          <td><center>Equation</center></td>
+          <td>C35H44N4O16</td>
+        </tr>
+        <tr>
+          <td><center>C_Equation</center></td>
+          <td>776.2752</td>
+        </tr>
+        <tr>
+          <td><center>Delta G</center></td>
+          <td><center>No Data</center></td>
+        </tr>
+        <tr>
+          <td><center>Gene Download</center></td>
+          <td><center><a class="btn large focus" target="_blank href="../Gene_download/R_name>
+            <i class="icon fa-download">
+            </i> Download</a>
+         </center>
+         </td>
+        </tr>
+          </table>

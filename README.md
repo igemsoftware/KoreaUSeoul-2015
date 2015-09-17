@@ -43,84 +43,6 @@
 + __index.html__
 
 
-####Upload to mySQL server 
-+ You must have to build a mysql server. [mySQL](https://www.mysql.com/)
-+ mySQLdb.txt / before_screening.txt
-
- -Basic settings mySQL : miseq.korea.ac.kr
-
- -Basic settings database : igem_712
-
- -Basic settings table : path_score_table / valid_path
-
-
-+ 	How to upload mySQLdb.txt
-
- 1) Create a table named 'path_score_table'.
-```
-CREATE TABLE IF NOT EXISTS path_score_table (
-      id int auto_increment,
-      path VARCHAR(255)
-showname VARCHAR(255),
-      atp VARCHAR(255),
-      co2 VARCHAR(255),
-     nadh VARCHAR(255),
-      nadph VARCHAR(255),
-      net_name VARCHAR(255),
-      reaction VARCHAR(255),
-      PRIMARY KEY (id)
-    );
-```
-
-  2) Uploads ‘mySQLdb.tx’ to 'path_score_table' of MySQL
-```
-load data local infile '/your folder/data/mySQLdb.txt' into table path_score_table IGNORE 1 LINES (path, showname, atp,      co2, nadh, nadph, net_name, reaction);
-```
-
-  3) Set index for faster calculation when the size of the database is massive.
-```
-alter table path_score_table add index index1(path);
-```
-
-+ •	How to upload before_screening.txt
-
- 1) Create a 'valid_path' table.
-```
-CREATE TABLE IF NOT EXISTS valid_path (
-    id int auto_increment,
-    path VARCHAR(255),
-    number_of_valid VARCHAR(255),
-    PRIMARY KEY (id)
- );
-```    
- 2)Uploads ‘before_screening.txt’ to 'valid_path table’ of MySQL.
-```
-load data local infile '/your 712 folder/data/before_screening.txt' REPLACE INTO TABLE valid_path IGNORE 1 LINES (path,      number_of_vaild);
-```
- 3) Set up index.
-```
-alter table valid_path add index index2(path);
-```
-
-####5. File path modification
-
-The code in the line 192 of ‘graph.php’ :
-```
-$filepath = "path of your json folder".$input[1]."_".$output[1].".json";
-```
-Enter Path of your json folder
-
-####6. Trial using a sample
-+ In the main page (index.html),
-
-+ Type in the compound and click the one you want.
- - Sample for trial
- - C06891 -> C20424
- - C16653 -> C16656
- - C00805 -> C04793
- - C02635 -> C04793
-
-+ Uses the data that comes right after the semicolon( C number) and receives corresponding json data.
 
 그림파일 : 각 화면에서 차지하는 파일들.
 
@@ -132,21 +54,12 @@ See API documentation for detailed information.
 ##Library includes in ‘GIL’
 ---
 + css
-
  -[font_awesome.min.css](https://fortawesome.github.io/Font-Awesome/get-started/)
- 
  -[introLoader.min.css](http://factory.brainleaf.eu/jqueryIntroLoader/)
- 
  -[bootstarap.css](http://getbootstrap.com/css/)
- 
  -[ jui.css / jennifer.theme.css](https://github.com/seogi1004/jui)
- 
- 
-
 + js
-
  -[jquery.introloader.pack.min.js](http://factory.brainleaf.eu/jqueryIntroLoader/)
- 
  -[jui.min.js (jennifer UI)/autocomplete.js](https://github.com/seogi1004/jui)
  -autocomplete.js
 ```
@@ -177,28 +90,7 @@ See API documentation for detailed information.
 ```
 
  -[*whole.js](https://github.com/PMSI-AlignAlytics/dimple/wiki)
-```
-      // This code should support any data in this structure changing the data here
-    // should be dealt with by the the code below.  The y axis min and max must
-    // be able to contain the data required or the results will be incorrect.
-    // Also the "bar" elements must have the correct value (sum of previous "bar"
-    // + intervening "var" elements)
-```
- 
  -[*skel.min.js](https://github.com/n33/skel)
-```
-/* skel.js v2.2.1 | (c) n33 | getskel.com | MIT licensed */
-```
- 
  -[*init.js](http://templated.co/)
-```
-/*
-    Transit by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-```
-
  -[jquery.battatech.excelexport.js](https://github.com/battatech/battatech_excelexport)
-
  -[d3.js](http://d3js.org/)

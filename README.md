@@ -12,11 +12,9 @@ for users
 우리 712는 웹앱이다 여기를 [클릭](http://compbio.korea.ac.kr/712)하면 이동한다.
 
 for end users
-여기서 볼수 있단다. [release](https://github.com/igemsoftware/KoreaUSeoul-2015/releases)
-
 ---
 
-####Folder structure
+#### 1. Folder structure
 + __CSS__ 
 + __R_info_html__
 
@@ -49,8 +47,8 @@ for end users
 
 + __index.html__
 
-####Download using git clone, in the bottom right of github.
-####Upload to mySQL server 
+#### 2. Download using git clone, in the bottom right of github.
+#### 3. Upload to mySQL server 
 + You must have to build a mysql server. [mySQL](https://www.mysql.com/)
 + mySQLdb.txt / before_screening.txt
 
@@ -109,7 +107,7 @@ load data local infile '/your 712 folder/data/before_screening.txt' REPLACE INTO
 alter table valid_path add index index2(path);
 ```
 
-####5. File path modification
+#### 4. File path modification
 
 The code in the line 192 of ‘graph.php’ :
 ```
@@ -117,7 +115,7 @@ $filepath = "path of your json folder".$input[1]."_".$output[1].".json";
 ```
 Enter Path of your json folder
 
-####6. Trial using a sample
+#### 5. Trial using a sample
 + In the main page (index.html),
 
 + Type in the compound and click the one you want.

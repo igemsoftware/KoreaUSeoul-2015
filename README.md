@@ -126,9 +126,9 @@ Enter Path of your json folder
 
 + Uses the data that comes right after the semicolon( C number) and receives corresponding json data.
 
-+ 그림파일 : 각 화면에서 차지하는 파일들.
+그림파일 : 각 화면에서 차지하는 파일들.
 
-+ 	See API documentation for detailed information.
+See API documentation for detailed information.
 
 <p align="center"><img src="http://postfiles15.naver.net/20150825_222/azure0777_1440475809932MJtIA_JPEG/git_hub.jpg?type=w2"></p>
 

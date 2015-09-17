@@ -44,7 +44,7 @@
 
 
 ####Upload to mySQL server 
-+ 당신은 mysql 서버를 구축하고 있어야 합니다. [구축하려면](https://www.mysql.com/)
++ You must have to build a mysql server. [mySQL](https://www.mysql.com/)
 + mySQLdb.txt / before_screening.txt
 
  -Basic settings mySQL : miseq.korea.ac.kr

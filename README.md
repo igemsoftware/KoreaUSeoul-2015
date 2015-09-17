@@ -115,9 +115,9 @@ alter table valid_path add index index2(path);
 
 The code in the line 192 of ‘graph.php’ :
 ```
-$filepath = "당신의 json이 들어 있는 폴더 경로".$input[1]."_".$output[1].".json";
+$filepath = "path of your json folder".$input[1]."_".$output[1].".json";
 ```
-Enter Path of your json
+Enter Path of your json folder
 
 ####6. Trial using a sample
 + In the main page (index.html),

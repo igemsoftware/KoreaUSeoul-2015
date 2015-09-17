@@ -1,5 +1,5 @@
 # KoreaUSeoul-2015
-<p align="center"><img src="http://compbio.korea.ac.kr/712/images/engBlack.png"></p>
+<p align="center"><img width=300px height=75 src="http://compbio.korea.ac.kr/712/images/engBlack.png"></p>
 ---
 ---
 #712

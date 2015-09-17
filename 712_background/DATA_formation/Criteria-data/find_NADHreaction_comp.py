@@ -1,6 +1,6 @@
 ## !/usr/bin/python
 ## function: save main C#, C# of each reaction that uses NADH
-## output: <root_dir>/ ‘NADHreaction_compoundPair.txt’ (Format: R#####, C#####, C#####)
+## output: '<root_dir>/NADHreaction_compoundPair.txt’ (Format: R#####, C#####, C#####)
 
 ## import modules
 import itertools

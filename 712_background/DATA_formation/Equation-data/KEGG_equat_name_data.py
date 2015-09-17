@@ -1,7 +1,6 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function: formation of database classifying the reactant and the product that is expressed with chemical name of the main reaction.
+## output:‘<root_dir>/equ_name_data.txt’ (format: R#####, C#####, C#####, reactants, products)
 
 ## import modules
 from time import strftime
@@ -28,7 +27,7 @@ def main(argv):
 
 	#Run Fuctions
         print 'START time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
-        make_file(kegg_reaction)
+        make_file(kegg_reaction,root_dir)
         print 'END time:\t%s' % (strftime("%Y-%m-%d %H:%M:%S"))
 
 ### Define functions
@@ -38,10 +37,10 @@ def read_file(input_file):
                 txt = list(line for line in txt if line)
         return txt
 
-def make_file(ReactionID_compoundPair):
+def make_file(ReactionID_compoundPair,root_dir):
 	kegg_reaction = read_file(ReactionID_compoundPair)
 	
-	output_file = 'equ_name_data.txt'
+	output_file = '%s/equ_name_data.txt' %(root_dir)
 	output = open(output_file, 'w')
 
 	i = 0

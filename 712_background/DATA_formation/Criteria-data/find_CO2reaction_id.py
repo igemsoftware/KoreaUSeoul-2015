@@ -1,7 +1,6 @@
 ## !/usr/bin/python
-## function:
-## input:
-## output:
+## function: save the KEGG reaction list related to CO2.
+## output:'CO2_reaction_id.txt'
 
 ## import modules
 

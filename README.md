@@ -168,7 +168,8 @@ See API documentation for detailed information.
  - [ jui.css / jennifer.theme.css](https://github.com/seogi1004/jui)
 + js 
  - [jquery.introloader.pack.min.js](http://factory.brainleaf.eu/jqueryIntroLoader/)
- - [jui.min.js (jennifer UI)/autocomplete.js](https://github.com/seogi1004/jui)
+ - [jui.min.js (jennifer UI)](https://github.com/seogi1004/jui)
+ - [autocomplete.js](http://www.brightpointinc.com/clients/brightpointinc.com/library/autocomplete/)
  - [whole.js](https://github.com/PMSI-AlignAlytics/dimple/wiki)
  - [skel.min.js](https://github.com/n33/skel)
  - [init.js](http://templated.co/)

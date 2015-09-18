@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS valid_path (
     PRIMARY KEY (id)
  );
 ```    
- 2)Upload ‘before_screening.txt’ to 'valid_path table’ of MySQL.
+ 2)Upload ‘before_screening.txt’ to 'valid_path' table of MySQL.
 ```
 load data local infile '/your 712 folder/data/before_screening.txt' REPLACE INTO TABLE valid_path IGNORE 1 LINES (path,      number_of_vaild);
 ```

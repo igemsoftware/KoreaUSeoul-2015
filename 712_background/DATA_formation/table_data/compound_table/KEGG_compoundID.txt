@@ -1,0 +1,126 @@
+Last login: Fri Sep 18 15:13:41 on ttys003
+synbio:~ byoungnam$ ssh smcho@eevee.korea.ac.kr
+smcho@eevee.korea.ac.kr's password: 
+Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-32-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+Last login: Fri Sep 18 14:33:22 2015 from eevee
+smcho@eevee:~$ cd ..
+smcho@eevee:/home$ cd dhkim
+smcho@eevee:/home/dhkim$ ls
+cegma_protein                   output_kegg
+codes                           outtree
+compound_table.py               parse_data.py
+core_genome                     reaction_table
+download                        README.md
+examples.desktop                result_blastp
+fungal_universe                 result_blastp_cegma
+interproscan-5.8-49.0           result_ips
+kegg_compound_autocomplete.csv  SYSU-Software_2014-master
+kegg_compound_part.tsv          table_making
+kegg_reaction.tsv               temp
+kog_dnadist                     temp_con
+list_nodes.txt                  temp_pfam
+outfile
+smcho@eevee:/home/dhkim$ cd table_making/
+smcho@eevee:/home/dhkim/table_making$ ls
+compound_id.txt  compound_table.py  table_format.txt  table_mkr.py
+smcho@eevee:/home/dhkim/table_making$ vim table_mkr.py
+smcho@eevee:/home/dhkim/table_making$ vim compound_id.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C13482
+C19621
+C19620
+C19623
+C19622
+C19625
+C19624
+C06361
+C02130
+C02133
+C02132
+C02135
+C02134
+C02137
+C02139
+C01801
+C01802
+C01804
+C18169
+C17568
+C17569
+C12044
+C12045
+C17560
+C17561
+C17562
+C03268
+C03269
+C06346
+C03267
+C06342
+C03263
+C06341
+C06409
+C04271
+C04272
+C18711
+C04275
+C04276
+C04277
+C03409
+C03402
+C06163
+C06160
+C03401
+C03406
+C06167
+C03404
+C06165
+C04180
+C04181
+C04186
+C04187
+C04185
+C04188
+C07565
+C00692
+C00693
+C00691
+C00696
+C00697
+C00694
+

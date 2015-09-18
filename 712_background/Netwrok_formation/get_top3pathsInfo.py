@@ -126,7 +126,7 @@ def parse_equat_data(pathway_link):
         dic_reac = defaultdict(str)
         dic_prod = defaultdict(str)
         for line in txt:
-                line_split = line.split(',')
+                line_split = line.split('@')
                 edge_from = line_split[1].strip()
                 edge_to = line_split[2].strip()
                 reaction = line_split[0].strip()
@@ -190,11 +190,15 @@ def cal_score(dict_path_com, dict_score):
                 D_small = {}
                 score_change = 0
                 for path_element in dict_path_com[key]:
-                        if dict_score.has_key(path_element):
+                        reaction_id, from_comp, to_comp = path_element
+                        if (reaction_id, from_comp, to_comp) in dict_score.keys():
                                 score_num = int(dict_score[path_element])
                                 score_change += int(dict_score[path_element])
-                        else:
-                                score_num = 0
+                        elif (reaction_id, to_comp, from_comp) in dict_score.keys():
+				score_num = -int(dict_score[(reaction_id, to_comp, from_comp)])
+                                score_change += -int(dict_score[(reaction_id, to_comp, from_comp)])
+                        else:        
+				score_num = 0
                                 score_change += 0
                         D_small[path_element] = score_num
                 D_score[key].append(D_small)

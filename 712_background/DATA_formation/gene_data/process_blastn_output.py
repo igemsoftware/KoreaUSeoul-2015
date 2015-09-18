@@ -16,7 +16,7 @@ def main(argv):
 	parser.add_option("-b", "--blastOutputFile", action="store", type="string",
 		dest="blast_output", help='The blast output file.')
 	parser.add_option("-r", "--rootDir", action="store", type="string",
-		dest="root_dir", help='The root directory. All files are generated here.')
+		dest="root_dir", help='The root directory. All files will be generated here.')
 
 	(options, args) = parser.parse_args()
 	if options.root_dir:

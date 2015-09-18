@@ -133,7 +133,41 @@ Enter Path of your json folder
  - C00805 -> C04793
  - C02635 -> C04793
 
-+ Uses the data that comes right after the semicolon( C number) and receives corresponding json data.
++ Use the data that comes right after the semicolon(C number) and receives corresponding json data.
+
+#### 6. Full data which are used in Gil program
+
++ There are 7 kinds of data that we use 
+
+ - JSON files
+
+ - TSV files
+
+ - mySQLdb.txt
+
+ - Biobrick ID file and KEGG gene files(html)
+
+ - Reaction infomation table files(html) and Compound information table files(html)
+ 
++ If you want to get full data that we use, download these files by doing the following 
+ 
+ 1) Download the zip archive.
+ 2) Extract files from the archive to where you want to hold the server files.
+
+ If you are using a terminal, just write down the commands below.
+ ```
+ wget https://compbio.korea.ac.kr/712/download/<file_name.tar.gz>
+ unzip <file_name.tar.gz>
+ 
+ <file_name.tar.gz> list
+ JSON_fileddd
+ dddd
+ ddd
+ ddd
+ 
+```    
+
+
 
 
 

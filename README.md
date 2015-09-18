@@ -115,23 +115,15 @@ load data local infile '/your 712 folder/data/before_screening.txt' REPLACE INTO
 alter table valid_path add index index2(path);
 ```
 
-#### 4. File path modification
 
-The code in the line 192 of ‘graph.php’ :
-```
-$filepath = "path of your json folder".$input[1]."_".$output[1].".json";
-```
-Enter Path of your json folder
-
-#### 5. Trial using a sample
+#### 4. Trial using a sample
 + In the main page (index.html),
 
 + Type in the compound and click the one you want.
  - Sample for trial
- - C06891 -> C20424
- - C16653 -> C16656
- - C00805 -> C04793
- - C02635 -> C04793
+ - C01399 -> C00022
+ - C01399 -> C00124
+ - C01399 -> C20680
 
 + Use the data that comes right after the semicolon(C number) and receives corresponding json data.
 

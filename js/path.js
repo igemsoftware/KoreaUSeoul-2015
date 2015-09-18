@@ -14,10 +14,10 @@ var size = d3.scale.pow().exponent(1)
 //var tool = tooltip;
 
 var force = d3.layout.force()
-    .gravity(0.07)   //가운데로 모이는 정도 숫자가 클수록 모인다.
-    .charge(-2000)   //가운데로 모이는 정도.서로 달라붙는 정도 숫자가 클수록
-    .linkDistance(0)// link 길이
-    .friction(0.95)  //흐물거리는 정도
+    .gravity(0.07)   
+    .charge(-2000) 
+    .linkDistance(0)
+    .friction(0.95) 
     .size([w,h]);
 var color = d3.scale.linear()
     .domain([0, 1, 2, 3])

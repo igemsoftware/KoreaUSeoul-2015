@@ -156,7 +156,7 @@ Enter Path of your json folder
  2) Extract files from the archive to where you want to hold the server files.
 
   If you are using a terminal, just write down the commands below.
-  ```
+ 
   wget https://compbio.korea.ac.kr/712/download/<file_name.tar.gz>
   unzip <file_name.tar.gz>
  
@@ -166,8 +166,6 @@ Enter Path of your json folder
   ddd
   ddd
  
-  '''
-
 
 
 

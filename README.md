@@ -149,7 +149,7 @@ See API documentation for detailed information.
 
 
 ---
-##Library includes in ‘712’
+##Library includes in ‘Gil’
 ---
 + css
  - [font_awesome.min.css](https://fortawesome.github.io/Font-Awesome/get-started/)

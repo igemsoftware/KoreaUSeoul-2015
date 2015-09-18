@@ -9,14 +9,14 @@ Our team introduced a navigation system to the calculation of biological pathway
 
 This program can provide pathway which yields products you want from reactants that you can offer. :smile:
 
-##installation
+##Installation
 
 ###for everyone
 We used the Web so that users, including ordinary people, can easily access to our software.
 
 Click [Gil : The pathfinder for Synthetic Biologists](http://compbio.korea.ac.kr/712)
 
-###for Advanced
+###for developers 
 
 If you want to host a seperate copy of the server, Follow the instructions below:
 
@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS path_score_table (
     );
 ```
 
-  2) Uploads ‘mySQLdb.tx’ to 'path_score_table' of MySQL
+  2) Upload ‘mySQLdb.tx’ to 'path_score_table' of MySQL
 ```
 load data local infile '/your folder/data/mySQLdb.txt' into table path_score_table IGNORE 1 LINES (path, showname, atp,      co2, nadh, nadph, net_name, reaction);
 ```
@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS valid_path (
     PRIMARY KEY (id)
  );
 ```    
- 2)Uploads ‘before_screening.txt’ to 'valid_path table’ of MySQL.
+ 2)Upload ‘before_screening.txt’ to 'valid_path table’ of MySQL.
 ```
 load data local infile '/your 712 folder/data/before_screening.txt' REPLACE INTO TABLE valid_path IGNORE 1 LINES (path,      number_of_vaild);
 ```

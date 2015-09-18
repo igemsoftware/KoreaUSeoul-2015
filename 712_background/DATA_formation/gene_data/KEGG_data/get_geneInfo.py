@@ -12,10 +12,6 @@ import re, sys, os, glob
 from optparse import OptionParser
 
 
-### Parameters
-output_dir = '/home/shkim/iGEM/GeneGene'
-
-
 def main(argv):
         optparse_usage = 'get_geneInfo.py -i <kegg_reaction> -r <root_dir>'
         parser = OptionParser(usage=optparse_usage)
@@ -45,7 +41,7 @@ def main(argv):
                 enzyme = line_split[1]
 
                 # Download and write to file
-                output_faa_file = os.path.join(output_dir, '%s' % (reaction_id))
+                output_faa_file = os.path.join(root_dir, 'GeneGene','%s' % (reaction_id))
                 output_handle = open(output_faa_file, 'w')
 
                 idx = enzyme.find('///')

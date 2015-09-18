@@ -101,9 +101,6 @@
 				</nav>
 			</header>
     	<script>				
- /* $(function() {
-    $( "#score1" ).tabs();
-  });*/
   jui.ready([ "uix.tab" ], function(tab) {
     tab_1 = tab("#score1", {
         event: {
@@ -189,7 +186,7 @@
           </div>
 
     </div><!-- a div close-->
-  <?php $filepath = "../712/json/".$input[1]."_".$output[1].".json";
+  <?php $filepath = "/your 712 folder path/json/".$input[1]."_".$output[1].".json";
   if(file_exists($filepath))
   {
     echo '<script type="text/javascript" src="js/path.js"></script>';
@@ -539,7 +536,7 @@
           echo "      <td>" . $row["nadph"] . "</td>";
           echo "      <td>" . $row["co2"] . "</td>";
           echo "      <td>" . $row["net_name"] . "</td>";
-          echo "      <td>" . $row["#reactions"] . "</td>";
+          echo "      <td>" . $row["reaction"] . "</td>";
           echo "    </tr>";
         }
         echo "  </tbody>";

@@ -40,7 +40,7 @@ def read_file(input_file):
 def make_file(ReactionID_compoundPair,root_dir):
 	kegg_reaction = read_file(ReactionID_compoundPair)
 	
-	output_file = '%s/equ_name_data.txt' %(root_dir)
+	output_file = '%s/equation_chemName.txt' %(root_dir)
 	output = open(output_file, 'w')
 
 	i = 0

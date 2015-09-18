@@ -53,7 +53,7 @@ If you want to host a seperate copy of the server, Follow the instructions below
  -`tsv/(C number)_(C number).tsv` `(tsv/(start compound)_(end compound).tsv)` : tsv that contains the quantity of change of each reaction.
 + __BioBrick__
 
- -` (Gene ID).html` : html that connect the gene information and biobrick
+ -` (Gene ID).html` : html that connects to biobrick_parts webpage of gene id
 
 + __Gene_download__
 
@@ -65,11 +65,11 @@ If you want to host a seperate copy of the server, Follow the instructions below
 
 
 #### 3. Upload to mySQL server 
-+ You must have to build a mysql server. [mySQL](https://www.mysql.com/)
++ You must have to build a mySQL server. [mySQL](https://www.mysql.com/)
 
-+ Change the default settings to suit yours  (rows 14~16, graph.php)
++ Change the default settings that suits for you  (rows 14~16, graph.php)
 
- -default mySQL : miseq.korea.ac.kr 
+ -default mySQL server : miseq.korea.ac.kr 
 
  -default database : igem_712
 

@@ -58,7 +58,7 @@ If you want to host a seperate copy of the server, Follow the instructions below
 
 #### 3. Upload to mySQL server 
 + You must have to build a mysql server. [mySQL](https://www.mysql.com/)
-+ mySQLdb.txt / before_screening.txt
++ mySQLdb.txt
 + Change your Settings (rows 14~16, graph.php)
 
  -Basic settings mySQL : miseq.korea.ac.kr 
@@ -95,27 +95,6 @@ load data local infile '/your 712 folder/data/mySQLdb.txt' into table path_score
 ```
 alter table path_score_table add index index1(path);
 ```
-
-+ •	How to upload before_screening.txt
-
- 1) Create a 'valid_path' table.
-```
-CREATE TABLE IF NOT EXISTS valid_path (
-    id int auto_increment,
-    path VARCHAR(255),
-    number_of_valid VARCHAR(255),
-    PRIMARY KEY (id)
- );
-```    
- 2)Upload ‘before_screening.txt’ to 'valid_path' table of MySQL.
-```
-load data local infile '/your 712 folder/data/before_screening.txt' REPLACE INTO TABLE valid_path IGNORE 1 LINES (path,      number_of_vaild);
-```
- 3) Set up index.
-```
-alter table valid_path add index index2(path);
-```
-
 
 #### 4. Trial using a sample
 + In the main page (index.html),

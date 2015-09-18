@@ -152,20 +152,21 @@ Enter Path of your json folder
 + If you want to get full data that we use, download these files by doing the following 
  
  1) Download the zip archive.
+ 
  2) Extract files from the archive to where you want to hold the server files.
 
- If you are using a terminal, just write down the commands below.
- ```
- wget https://compbio.korea.ac.kr/712/download/<file_name.tar.gz>
- unzip <file_name.tar.gz>
+  If you are using a terminal, just write down the commands below.
+  ```
+  wget https://compbio.korea.ac.kr/712/download/<file_name.tar.gz>
+  unzip <file_name.tar.gz>
  
- <file_name.tar.gz> list
- JSON_fileddd
- dddd
- ddd
- ddd
+  <file_name.tar.gz> list
+  JSON_fileddd
+  dddd
+  ddd
+  ddd
  
-```    
+  '''
 
 
 

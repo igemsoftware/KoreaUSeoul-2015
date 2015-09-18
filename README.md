@@ -24,7 +24,7 @@ If you want to host a seperate copy of the server, Follow the instructions below
 
 
 ---
-#### 1. Download in the [release pages](https://github.com/igemsoftware/KoreaUSeoul-2015/releases) or using "download ZIP" button, in the right of github.
+#### 1. Download Gil_v1.zip in the [release pages](https://github.com/igemsoftware/KoreaUSeoul-2015/releases).
 
 #### 2. Folder structure
 + __CSS__ 
@@ -57,7 +57,7 @@ If you want to host a seperate copy of the server, Follow the instructions below
 
 + __Gene_download__
 
- -`(R number).html` : html that contains the gene information corresponding to the Reaction
+ -`(R number).html` : html that contains the gene information corresponding to the reaction
 
 + __graph.php__ : Receives the data entered by the user and shows the results through json, js, tsv, mySQL. 
 

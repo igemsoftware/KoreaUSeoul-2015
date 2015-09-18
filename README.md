@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS path_score_table (
 
   2) Upload ‘mySQLdb.txt’ to 'path_score_table' of MySQL
 ```
-load data local infile '/your folder/data/mySQLdb.txt' into table path_score_table IGNORE 1 LINES (path, showname, atp,      co2, nadh, nadph, net_name, reaction);
+load data local infile '/your 712 folder/data/mySQLdb.txt' into table path_score_table IGNORE 1 LINES (path, showname, atp,      co2, nadh, nadph, net_name, reaction);
 ```
 
   3) Set index for faster calculation when the size of the database is massive.

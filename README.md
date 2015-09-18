@@ -16,6 +16,8 @@ We used the Web so that users, including ordinary people, can easily access to o
 
 Click [Gil : The pathfinder for Synthetic Biologists](http://compbio.korea.ac.kr/712)
 
+'Gil' is optimized for Chrome.
+
 ###for developers 
 
 If you want to host a seperate copy of the server, Follow the instructions below:

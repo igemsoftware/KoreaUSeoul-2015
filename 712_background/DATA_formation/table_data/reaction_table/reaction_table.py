@@ -7,7 +7,7 @@ def main(argv):
         parser.add_option("-i", "--inputpaths", action="store", type="string",
                 dest="input_path", help='The input file is the kegg_reaction.tsv')
 	parser.add_option("-g", "--deltaGpaths", action="store", type="string",
-                dest="deltaG_path", help='The input file is the info_deltaG.csv')
+                dest="deltaG_path", help='The input file is the Info_deltaG.csv')
         parser.add_option("-r", "--rootDir", action="store", type="string",
                 dest="root_dir", help='The root directory. All files are generated here.')
         parser.add_option("-f", "--tableFormat", action="store", type="string",

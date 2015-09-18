@@ -70,7 +70,7 @@ If you want to host a seperate copy of the server, Follow the instructions below
 
 + 	How to upload mySQLdb.txt to the Server (in mySQL)
 
- 1) Select your database ($USE 'your database name') and Create a table named 'path_score_table'.
+ 1) Select your database ($USE 'your database name') and create a table named 'path_score_table'.
 ```
 CREATE TABLE IF NOT EXISTS path_score_table (
       id int auto_increment,
@@ -127,7 +127,7 @@ alter table valid_path add index index2(path);
  - C01399 -> C20680
 
 + Use the data that comes right after the semicolon(C number) and receives corresponding json data.
-+ 테스트를 위해서 당신은 단지 'from' 입력창에 ';C01399'를, to 입력창에 ';C00022'를 입력하면 됩니다.
++ For trial, just put ';C01399' into the form labled 'from' and  ';C00022' into the form labled 'to' 
 
 #### 5. Full data which are used in Gil program
 

@@ -24,7 +24,7 @@ If you want to host a seperate copy of the server, Follow the instructions below
 
 
 ---
-#### 1. Download Gil_v1.zip in the [release pages](https://github.com/igemsoftware/KoreaUSeoul-2015/releases).
+#### 1. [Download](https://github.com/igemsoftware/KoreaUSeoul-2015/releases).
 
 #### 2. Folder structure
 + __CSS__ 

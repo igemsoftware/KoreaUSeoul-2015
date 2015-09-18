@@ -50,7 +50,7 @@ id	showname	reaction	change
 3	1st largest NADH production	R10862	0
 4	1st largest NADH production	R10900	0
 5	1st largest NADH production	R10532	0
-6	1st largest NADH production	R10565	0
+6	1st largest NADH production	R10565	1
 7	1st largest NADH production	R01981	1
 8	1st largest NADH production	R05608	0
 9	1st largest NADH production	R02754	0
@@ -61,7 +61,7 @@ id	showname	reaction	change
 5	2nd largest NADH production	R10550	0
 6	2nd largest NADH production	R10563	0
 7	2nd largest NADH production	R01048	0
-8	2nd largest NADH production	R02531	0
+8	2nd largest NADH production	R02531	1
 9	2nd largest NADH production	R00205	0
 1	3rd largest NADH production	A00001	0
 2	3rd largest NADH production	A00003	0
@@ -73,10 +73,10 @@ id	showname	reaction	change
 3	1st largest NADPH production	R10862	1
 4	1st largest NADPH production	R10900	0
 5	1st largest NADPH production	R10550	0
-6	1st largest NADPH production	R10563	0
+6	1st largest NADPH production	R10563	-1
 7	1st largest NADPH production	R01048	0
 8	1st largest NADPH production	R02531	0
-9	1st largest NADPH production	R00205	0
+9	1st largest NADPH production	R00205	1
 1	2nd largest NADPH production	A00001	0
 2	2nd largest NADPH production	A00003	0
 3	2nd largest NADPH production	R10862	1

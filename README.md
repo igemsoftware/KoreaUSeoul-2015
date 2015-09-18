@@ -127,7 +127,7 @@ alter table valid_path add index index2(path);
  - C01399 -> C20680
 
 + Use the data that comes right after the semicolon(C number) and receives corresponding json data.
-+ For trial, just put ';C01399' into the form labled 'from' and  ';C00022' into the form labled 'to'.
++ For trial, just put ';C01399' into the 'from' input and  ';C00022' into the 'to' input.
 
 #### 5. Full data which are used in Gil program
 

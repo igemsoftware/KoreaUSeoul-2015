@@ -157,14 +157,17 @@ Enter Path of your json folder
 
   If you are using a terminal, just write down the commands below.
  
-  wget https://compbio.korea.ac.kr/712/download/<file_name.tar.gz>
+  wget https://compbio.korea.ac.kr/712/download/<file_name>
   unzip <file_name.tar.gz>
  
-  <file_name.tar.gz> list
-  JSON_fileddd
-  dddd
-  ddd
-  ddd
+  <file_name> list
+  JSON_files ->
+  TSV files ->
+  mySQLdb.txt -> mySQLdb.txt
+  Biobrick ID file ->
+  KEGG gene files(html)(5.5G) -> Gene_download_release_v1.0.tar.gz 
+  Reaction infomation table files(html)(44M) -> Reaction_information_table_release_v1.0.tar.gz
+  Compound information table files(html)(71M) -> Compound_information_table_release_v1.0.tar.gz
  
 
 

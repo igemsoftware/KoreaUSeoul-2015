@@ -50,10 +50,10 @@ If you want to host a seperate copy of the server, Follow the instructions below
 
  -`name_to_C.tsv` : : tsv for auto complete. 
 
- -`tsv/(C number)_(C number).tsv` `tsv/(start compound)_(end compound).tsv` : tsv that contains the quantity of change of each reaction.
+ -`tsv/(C number)_(C number).tsv` `(tsv/(start compound)_(end compound).tsv)` : tsv that contains the quantity of change of each reaction.
 + __BioBrick__
 
- -` (organism ID):(Gene ID).html` : html that connect the gene information and biobrick
+ -` (Gene ID).html` : html that connect the gene information and biobrick
 
 + __Gene_download__
 

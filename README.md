@@ -55,7 +55,7 @@ If you want to host a seperate copy of the server, Follow the instructions below
 
 + __Gene_download__
 
- -`(R number).html` : html that contains gene information corresponding to the Reaction
+ -`(R number).html` : html that contains the gene information corresponding to the Reaction
 
 + __graph.php__ : Receives the data entered by the user and shows the results through json, js, tsv, mySQL. 
 

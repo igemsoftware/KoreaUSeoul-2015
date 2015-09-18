@@ -65,13 +65,13 @@ If you want to host a seperate copy of the server, Follow the instructions below
 #### 3. Upload to mySQL server 
 + You must have to build a mysql server. [mySQL](https://www.mysql.com/)
 + mySQLdb.txt
-+ Change your Settings (rows 14~16, graph.php)
++ Change Settings (rows 14~16, graph.php)
 
  -Basic settings mySQL : miseq.korea.ac.kr 
 
  -Basic settings database : igem_712
 
- -Basic settings table : path_score_table / valid_path
+ -Basic settings table : path_score_table
 
 
 + 	How to upload mySQLdb.txt to the Server (in mySQL)

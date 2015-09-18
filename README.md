@@ -76,7 +76,8 @@ If you want to host a seperate copy of the server, Follow the instructions below
 
 + 	How to upload mySQLdb.txt to the Server (in mySQL)
 
- 1) Select your database ($USE 'your database name') and create a table named 'path_score_table'.
+
+  1) Select your database ($USE 'your database name') and create a table named 'path_score_table'.
 ```
 CREATE TABLE IF NOT EXISTS path_score_table (
       id int auto_increment,

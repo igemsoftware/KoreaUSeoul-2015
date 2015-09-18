@@ -155,7 +155,7 @@ alter table path_score_table add index index1(path);
 
 
 
-See API documentation for detailed information.
+See [API documentation](http://2015.igem.org/wiki/images/6/6c/Gil_API_documentation.pdf) for detailed information.
 
 
 ---

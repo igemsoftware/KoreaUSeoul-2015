@@ -55,9 +55,9 @@ def make_file(ReactionID_compoundPair,root_dir):
 					strip1 = line.strip('DEFINITION')
                                 	reac_prod = strip1.split('<=>')
 					if data_split[int(data_split.index(line))+1].find(R_C1_C2[1]) < data_split[int(data_split.index(line))+1].find('<=>'):
-                                		output.write('%s, %s, %s, %s, %s\n' % (R_C1_C2[0],R_C1_C2[1],R_C1_C2[2],reac_prod[0].strip(),reac_prod[1].strip()))
+                                		output.write('%s@%s@%s@%s@%s\n' % (R_C1_C2[0],R_C1_C2[1],R_C1_C2[2],reac_prod[0].strip(),reac_prod[1].strip()))
 					else:
-						output.write('%s, %s, %s, %s, %s\n' % (R_C1_C2[0],R_C1_C2[1],R_C1_C2[2],reac_prod[1].strip(),reac_prod[0].strip()))
+						output.write('%s@%s@%s@%s@%s\n' % (R_C1_C2[0],R_C1_C2[1],R_C1_C2[2],reac_prod[1].strip(),reac_prod[0].strip()))
 
 		except urllib2.HTTPError, e:
 			print e.code

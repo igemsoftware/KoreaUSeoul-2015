@@ -142,7 +142,7 @@ alter table path_score_table add index index1(path);
   unzip [file_name]
  ```
   - [file_name] list
-  - JSON_files -> JSON_files_release_v1.0.tar.gz
+  - JSON_files(80G) -> JSON_files_release_v1.0.tar.gz
   - TSV files(40G) -> TSV_files_release_v1.0.tar.gz
   - mySQLdb.txt(34G) -> mySQLdb.txt
   - Biobrick ID file(80G) -> Biobrick_ID_file_release_v1.0.tar.gz

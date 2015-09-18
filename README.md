@@ -114,8 +114,9 @@ alter table path_score_table add index index1(path);
  - C01399 -> C00124
  - C01399 -> C20680
 
-+ Use the data that comes right after the semicolon(C number) and receives corresponding json data.
 + For trial, just put ';C01399' into the 'from' input and  ';C00022' into the 'to' input.
++ Use the data that comes right after the semicolon(C number) and receives corresponding json data.
+
 
 #### 5. Full data which are used in Gil program
 

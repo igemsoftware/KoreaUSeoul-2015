@@ -23,8 +23,8 @@ def main(argv):
         else:
                 print 'ERROR: please provide proper root direcotory'
         # Run the function
-        create_dir(root_dir)
-        make_file(root_dir)
+        output_dir = create_dir(root_dir)
+        make_file(output_dir)
 
 
 def create_dir(root_dir):
@@ -32,6 +32,7 @@ def create_dir(root_dir):
         if not glob.glob(output_dir):
                 command = 'mkdir %s' % (output_dir)
                 os.system(command)
+        return output_dir
 
 def make_file(root_dir):
         # Get EC list from KEGG using REST-style API

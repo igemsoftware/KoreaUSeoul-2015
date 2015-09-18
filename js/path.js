@@ -36,7 +36,7 @@ var g = svg.append("g");
 
 // Load JSON by input and output name. e.g. C0001_C0002.json by bnmin on Jul 23, 2015
 
-var json_file = '../712/json/' + input + '_' + output + '.json';
+var json_file = 'json/' + input + '_' + output + '.json';
 
 d3.json(json_file, function(error, json) {
   if (error) throw error;
@@ -123,13 +123,7 @@ svg.call(tip);
         .size(function(d) { return Math.PI*Math.pow(size(d.size)*base_radius/nominal_base_node_size||base_radius,2); })
         )
 		
-	//circle.attr("r", function(d) { return (size(d.size)*base_radius/nominal_base_node_size||base_radius); })
-//	if (!text_center) text.attr("dx", function(d) { return (-1*size(d.size)*20*base_radius/nominal_base_node_size||base_radius); });
-	
-/*  var text_size = nominal_text_size;
-    if (nominal_text_size*zoom.scale()>max_text_size) text_size = max_text_size/zoom.scale();
-    text.style("font-size",text_size + "px");
-*/
+
 	g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
 	});
 	 
@@ -141,7 +135,7 @@ svg.call(tip);
       
   function tick(e) {
 
-    // Push sources up and targets down to form a weak tree.
+
     var k = 30 * e.alpha;
     json.links.forEach(function(d, i) {
       d.source.y -= k;
@@ -149,7 +143,7 @@ svg.call(tip);
     });
 
     node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-//    text.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
     labels.attr("x", function(d) { return (d.source.x + d.target.x) / 2; }) 
         .attr("y", function(d) { return (d.source.y + d.target.y) / 2; });     
     link.attr("x1", function(d) { return d.source.x; })
@@ -193,90 +187,23 @@ svg.append("svg:defs").selectAll("marker")
 
 
 
-/*
 
-//Create an array logging what is connected to what
-var linkedByIndex = {};
-for (i = 0; i < json.nodes.length; i++) {
-    linkedByIndex[i + "," + i] = 1;
-};
-json.links.forEach(function (d) {
-    linkedByIndex[d.source.index + "," + d.target.index] = 1;
-});
-*/
-/*
-/This function looks up whether a pair are neighbours  
-function neighboring(a, b) {
-    return linkedByIndex[a.index + "," + b.index];
-}
-
-function connectedNodes() {
-
-    if (toggle == 0) {
-        //Reduce the opacity of all but the neighbouring nodes
-        d = d3.select(this).node().__data__;
-        node.style("opacity", function (o) {
-            return neighboring(d, o) | neighboring(o, d) ? 1 : 0.1;
-        });
-        
-        link.style("opacity", function (o) {
-            return d.index==o.source.index | d.index==o.target.index ? 1 : 0.1;
-        });
-
-        toggle = 1;
-    } else {
-        //Put them back to opacity=1
-        node.style("opacity", 1);
-        link.style("opacity", 1);
-        toggle = 0;
-    }
-
-}
-*/
-
-//show tooltip
-
-function showDetails(d) {
-    var baseurl, content;
-    content = '<div><span class="main" ></span><span class="main" style="float:right"></span></div>';
-    content += '<embed src="http://compbio.korea.ac.kr/712/C_info_html/' + d.name + '.html" width=100% height=100% marginwidth="0" marginheight="0" scrolling="overflow-x:hidden" frameborder="0" scrolling="no" ></iframe>' ;;
-    tool.showTooltip(content, d3.event);
-};
-/*
-function showDetails(d) {
-    var baseurl, content;
-    content = '<div><span class="main" >' + d.name + '</span><span class="main" style="float:right"></span></div>';
-    content += '<hr class="tooltip-hr">';
-    content += '<div><span class="span-color" style="background-color:' + d.color + '"></span>' + '<image src="http://www.genome.jp/Fig/compound/' + d.name + '.gif" width="150" height="100" >'+ '</div>';
-*/
-//hide tooltip 
-function hideDetails(d) {
-    tool.hideTooltip();
-};
 // ---Insert-------for chemical, reaction information
 function showinfo(d) {
   var header1 = document.getElementById('info');
 			
-		info.innerHTML = '<iframe src="../712/C_info_html/' + d.name + '.html" width=100% height=310px marginwidth="0" marginheight="0" scrolling="overflow-x:hidden" frameborder="0" scrolling="no" ></iframe>' ;
+		info.innerHTML = '<iframe src="C_info_html/' + d.name + '.html" width=100% height=310px marginwidth="0" marginheight="0" scrolling="overflow-x:hidden" frameborder="0" scrolling="no" ></iframe>' ;
 };
 
 function showlinkinfo(d) {
   var header2 = document.getElementById('linkinfo');
 			
-		linkinfo.innerHTML = '<embed src="../712/R_info_html/' + d.reaction + '.html" width=100% height=310px marginwidth="0" marginheight="0" scrolling="overflow-x:hidden" frameborder="0" scrolling="no" ></embed>' ;
+		linkinfo.innerHTML = '<embed src="R_info_html/' + d.reaction + '.html" width=100% height=310px marginwidth="0" marginheight="0" scrolling="overflow-x:hidden" frameborder="0" scrolling="no" ></embed>' ;
 
 };
 
-function showpathinfo(d) {
-  var header2 = document.getElementById('pathway');
-			
-		pathway.innerHTML = '<iframe src="../712/path_info_html/' + input + '_' + output + '.html" width="500" height="600" marginwidth="0" marginheight="0" scrolling="overflow-x:hidden" frameborder="0" scrolling="no" ></iframe>' ;
-
-};
 
 var circles = g.selectAll("path");
-//circles.on("mouseover", showDetails);
-//circles.on("mouseout", hideDetails);
 circles.on("click", showinfo);
 var lines = svg.selectAll("line");
 lines.on("click", showlinkinfo);
@@ -322,7 +249,6 @@ function hlpath1() {
         d3.selectAll(".node").style("opacity", "1");
         d3.selectAll(".link").style("opacity", "1");
         unselected.style("opacity", "0.1");
-//        selected.style("stroke", "#000000");
         unselectedlink.style("opacity", "0.1");
         toggle = 1;
         toggle2 = 0;
@@ -360,7 +286,6 @@ function hlpath2() {
         d3.selectAll(".node").style("opacity", "1");
         d3.selectAll(".link").style("opacity", "1");
         unselected.style("opacity", "0.1");
-//        selected.style("stroke", "#000000");
         unselectedlink.style("opacity", "0.1");
         toggle2 = 1;
         toggle = 0;
@@ -400,7 +325,6 @@ function hlpath3() {
         d3.selectAll(".node").style("opacity", "1");
         d3.selectAll(".link").style("opacity", "1");
         unselected.style("opacity", "0.1");
-//        selected.style("stroke", "#000000");
         unselectedlink.style("opacity", "0.1");
         toggle3 = 1;
         toggle2 = 0;
@@ -464,7 +388,6 @@ function hlpath4() {
         d3.selectAll(".node").style("opacity", "1");
         d3.selectAll(".link").style("opacity", "1");
         unselected.style("opacity", "0.1");
-//        selected.style("stroke", "#000000");
         unselectedlink.style("opacity", "0.1");
         toggle3 = 0;
         toggle2 = 0;
@@ -506,7 +429,6 @@ function hlpath5() {
         d3.selectAll(".node").style("opacity", "1");
         d3.selectAll(".link").style("opacity", "1");
         unselected.style("opacity", "0.1");
-//        selected.style("stroke", "#000000");
         unselectedlink.style("opacity", "0.1");
         toggle3 = 0;
         toggle2 = 0;
@@ -548,7 +470,6 @@ function hlpath6() {
         d3.selectAll(".node").style("opacity", "1");
         d3.selectAll(".link").style("opacity", "1");
         unselected.style("opacity", "0.1");
-//        selected.style("stroke", "#000000");
         unselectedlink.style("opacity", "0.1");
         toggle3 = 0;
         toggle2 = 0;
@@ -590,7 +511,6 @@ function hlpath7() {
         d3.selectAll(".node").style("opacity", "1");
         d3.selectAll(".link").style("opacity", "1");
         unselected.style("opacity", "0.1");
-//        selected.style("stroke", "#000000");
         unselectedlink.style("opacity", "0.1");
         toggle3 = 0;
         toggle2 = 0;
@@ -632,7 +552,6 @@ function hlpath8() {
         d3.selectAll(".node").style("opacity", "1");
         d3.selectAll(".link").style("opacity", "1");
         unselected.style("opacity", "0.1");
-//        selected.style("stroke", "#000000");
         unselectedlink.style("opacity", "0.1");
         toggle3 = 0;
         toggle2 = 0;
@@ -674,7 +593,6 @@ function hlpath9() {
         d3.selectAll(".node").style("opacity", "1");
         d3.selectAll(".link").style("opacity", "1");
         unselected.style("opacity", "0.1");
-//        selected.style("stroke", "#000000");
         unselectedlink.style("opacity", "0.1");
         toggle3 = 0;
         toggle2 = 0;
@@ -716,7 +634,6 @@ function hlpath10() {
         d3.selectAll(".node").style("opacity", "1");
         d3.selectAll(".link").style("opacity", "1");
         unselected.style("opacity", "0.1");
-//        selected.style("stroke", "#000000");
         unselectedlink.style("opacity", "0.1");
         toggle3 = 0;
         toggle2 = 0;
@@ -758,7 +675,6 @@ function hlpath11() {
         d3.selectAll(".node").style("opacity", "1");
         d3.selectAll(".link").style("opacity", "1");
         unselected.style("opacity", "0.1");
-//        selected.style("stroke", "#000000");
         unselectedlink.style("opacity", "0.1");
         toggle3 = 0;
         toggle2 = 0;
@@ -800,7 +716,6 @@ function hlpath12() {
         d3.selectAll(".node").style("opacity", "1");
         d3.selectAll(".link").style("opacity", "1");
         unselected.style("opacity", "0.1");
-//        selected.style("stroke", "#000000");
         unselectedlink.style("opacity", "0.1");
         toggle3 = 0;
         toggle2 = 0;

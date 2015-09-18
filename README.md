@@ -149,10 +149,11 @@ alter table valid_path add index index2(path);
 
   If you are using a terminal, just write down the commands below.
  
-  wget https://compbio.korea.ac.kr/712/download/<file_name>
-  unzip <file_name.tar.gz>
+  wget https://compbio.korea.ac.kr/712/download/[file_name]
+  
+  unzip [file_name.tar.gz]
  
-  - file_name list
+  - [file_name] list
   - JSON_files -> JSON_files_release_v1.0.tar.gz
   - TSV files ->
   - mySQLdb.txt -> mySQLdb.txt

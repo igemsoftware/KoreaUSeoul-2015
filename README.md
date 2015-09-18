@@ -143,9 +143,9 @@ alter table path_score_table add index index1(path);
  ```
   - [file_name] list
   - JSON_files -> JSON_files_release_v1.0.tar.gz
-  - TSV files -> TSV_files_release_v1.0.tar.gz
-  - mySQLdb.txt -> mySQLdb.txt
-  - Biobrick ID file -> Biobrick_ID_file_release_v1.0.tar.gz
+  - TSV files(40G) -> TSV_files_release_v1.0.tar.gz
+  - mySQLdb.txt(34G) -> mySQLdb.txt
+  - Biobrick ID file(80G) -> Biobrick_ID_file_release_v1.0.tar.gz
   - KEGG gene files(html)(5.5G) -> Gene_download_release_v1.0.tar.gz 
   - Reaction infomation table files(html)(44M) -> Reaction_information_table_release_v1.0.tar.gz
   - Compound information table files(html)(71M) -> Compound_information_table_release_v1.0.tar.gz

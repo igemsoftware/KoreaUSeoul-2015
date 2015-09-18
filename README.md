@@ -46,8 +46,6 @@ If you want to host a seperate copy of the server, Follow the instructions below
 
  -`mySQLdb.txt` : txt that contains the information of the whole path. 
 
- -`before_screening.txt` : txt that contains the calculation result of the whole path.
-
  -`name_to_C.tsv` : : tsv for auto complete. 
 
  -`tsv/(C number)_(C number).tsv` `tsv/(start compound)_(end compound).tsv` : tsv that contains the quantity of change of each reaction.

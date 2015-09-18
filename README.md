@@ -127,7 +127,7 @@ alter table valid_path add index index2(path);
 
 + Use the data that comes right after the semicolon(C number) and receives corresponding json data.
 
-#### 6. Full data which are used in Gil program
+#### 5. Full data which are used in Gil program
 
 + There are 7 kinds of data that we use 
 

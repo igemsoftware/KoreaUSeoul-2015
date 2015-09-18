@@ -122,22 +122,6 @@
         <!-- Main -->
         <section class="wrapper" id="one" style="background-color:#f9f9f9;">
             <header class="major">
-                <?php
-     $sql = "SELECT * FROM valid_path where path ='$input[1]_$output[1]' limit 1";
-     $result = $conn->query($sql);
-        if ($result->num_rows > 0){
-        echo " <h1>We searched your pathways between $input[0] ($input[1]) and  $output[0]($output[1]) by KEGG database.</h1>";
-        
-        while($row = $result->fetch_assoc()) {
-            echo "<p style='font-weight:bold;'>We found <a style='color:red;'>" . $row["number_of_valid"] . "</a>";
-        }
-        
-        echo " pathways. Pathways that are selected by our criteria will be shown below.</p><hr/>";
-    
-    } else {
-      echo "No pathway information" ;
-    }
-?>
             </header>
 
             <ul class="actions">

@@ -59,17 +59,17 @@ If you want to host a seperate copy of the server, Follow the instructions below
 #### 3. Upload to mySQL server 
 + You must have to build a mysql server. [mySQL](https://www.mysql.com/)
 + mySQLdb.txt / before_screening.txt
-
- -Basic settings mySQL : miseq.korea.ac.kr
++ Change your Settings (rows 14~16, graph.php) 
+ -Basic settings mySQL : miseq.korea.ac.kr 
 
  -Basic settings database : igem_712
 
  -Basic settings table : path_score_table / valid_path
 
 
-+ 	How to upload mySQLdb.txt
++ 	How to upload mySQLdb.txt to the Server (in mySQL)
 
- 1) Create a table named 'path_score_table'.
+ 1) Select your database ($USE 'your database name') and Create a table named 'path_score_table'.
 ```
 CREATE TABLE IF NOT EXISTS path_score_table (
       id int auto_increment,
@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS path_score_table (
     );
 ```
 
-  2) Upload ‘mySQLdb.tx’ to 'path_score_table' of MySQL
+  2) Upload ‘mySQLdb.txt’ to 'path_score_table' of MySQL
 ```
 load data local infile '/your folder/data/mySQLdb.txt' into table path_score_table IGNORE 1 LINES (path, showname, atp,      co2, nadh, nadph, net_name, reaction);
 ```
@@ -126,6 +126,7 @@ alter table valid_path add index index2(path);
  - C01399 -> C20680
 
 + Use the data that comes right after the semicolon(C number) and receives corresponding json data.
++ 테스트를 위해서 당신은 단지 'from' 입력창에 ';C01399'를, to 입력창에 ';C00022'를 입력하면 됩니다.
 
 #### 5. Full data which are used in Gil program
 

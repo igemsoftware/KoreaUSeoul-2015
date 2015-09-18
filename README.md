@@ -153,7 +153,7 @@ alter table valid_path add index index2(path);
   unzip <file_name.tar.gz>
  
   - <file_name> list
-  - JSON_files ->
+  - JSON_files -> JSON_files_release_v1.0.tar.gz
   - TSV files ->
   - mySQLdb.txt -> mySQLdb.txt
   - Biobrick ID file ->

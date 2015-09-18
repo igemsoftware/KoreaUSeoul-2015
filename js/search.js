@@ -1,7 +1,7 @@
 var keys;
 
                                 //Load US States as options from CSV - but this can also be created dynamically
-                            d3.tsv("../712/data/name_to_C.tsv", function (tsv) {
+                            d3.tsv("data/name_to_C.tsv", function (tsv) {
                                 keys=tsv;
                                 start();
                             });

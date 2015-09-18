@@ -1,5 +1,3 @@
-//var w = window.innerWidth;
-//var h = window.innerHeight;
 
 var w = $( 'div.a' ).width();
 var h = $( 'div.a' ).height()*0.1;
@@ -10,8 +8,7 @@ var size = d3.scale.pow().exponent(1)
   .domain([1,100])
   .range([1,100]);
 
-//var tooltip = Tooltip("vis-tooltip", 400);
-//var tool = tooltip;
+
 
 var force = d3.layout.force()
     .gravity(0.07)   
@@ -83,33 +80,13 @@ svg.call(tip);
       .style("fill", function(d) { return color(d.degree);}) 
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide);
-//      .on('dblclick', connectedNodes);
-//  node.append("circle")
-//      .attr("r", function (d) {
-//      return ((d.path1 + d.path2 + d.path3)*3 + 7);
-//      });
-//      function (d) {
-//      return color(d.path1 + d.path2 + d.path3);
-//      })
-//  node.append("text")
-//      .attr("dx", 17)
-//      .attr("dy", ".21em")
-//      .text(function(d) { return d.name });
+
 
   var circle = node.append("path")
       .attr("d", d3.svg.symbol()
       .size(function(d) { return Math.PI*Math.pow(size(d.size)||nominal_base_node_size,2); })
       .type(function(d) { return d.type; }))
-/*  
-  var text = g.selectAll(".text")
-    .data(json.nodes)
-    .enter().append("text")
-    .attr("dy", ".21em")
-    .attr("dx", "-1.5em")
-	.style("font-size", nominal_text_size*1.2 + "px")
-    .text(function(d) { return d.name })
-    .style("pointer-events","none");
- */
+
   zoom.on("zoom", function() {
   
   var stroke = nominal_stroke;

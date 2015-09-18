@@ -143,11 +143,30 @@ def make_file(input_path, output_name, kegg_reaction, atp_reaction_info, co2_rea
 					reaction_id = D_reaction_name[comp_from, comp_to]
 				else:
 					reaction_id = D_reaction_name[comp_to, comp_from]
-
-				atp_score += D_atp_score[(reaction_id, comp_from, comp_to)]
-				co2_score += D_co2_score[(reaction_id, comp_from, comp_to)]
-				nadh_score += D_nadh_score[(reaction_id, comp_from, comp_to)]
-				nadph_score += D_nadph_score[(reaction_id, comp_from, comp_to)]
+				if (reaction_id, comp_from, comp_to) in D_atp_score.keys():
+					atp_score += D_atp_score[(reaction_id, comp_from, comp_to)]
+				elif (reaction_id, comp_to, comp_from) in D_atp_score.keys():
+					atp_score += -D_atp_score[(reaction_id, comp_to, comp_from)]
+				else:
+					atp_score += 0
+				if (reaction_id, comp_from, comp_to) in D_co2_score.keys():
+                                        co2_score += D_co2_score[(reaction_id, comp_from, comp_to)]
+                                elif (reaction_id, comp_to, comp_from) in D_co2_score.keys():
+                                        co2_score += -D_co2_score[(reaction_id, comp_to, comp_from)]
+                                else:
+                                        co2_score += 0
+				if (reaction_id, comp_from, comp_to) in D_nadh_score.keys():
+                                        nadh_score += D_nadh_score[(reaction_id, comp_from, comp_to)]
+                                elif (reaction_id, comp_to, comp_from) in D_nadh_score.keys():
+                                        nadh_score += -D_nadh_score[(reaction_id, comp_to, comp_from)]
+                                else:
+                                        nadh_score += 0
+				if (reaction_id, comp_from, comp_to) in D_nadph_score.keys():
+                                        nadph_score += D_nadph_score[(reaction_id, comp_from, comp_to)]
+                                elif (reaction_id, comp_to, comp_from) in D_nadph_score.keys():
+                                        nadph_score += -D_nadph_score[(reaction_id, comp_to, comp_from)]
+                                else:
+                                        nadph_score += 0
 
 			D_scores[path_element] = (atp_score, co2_score, nadh_score, nadph_score)
 

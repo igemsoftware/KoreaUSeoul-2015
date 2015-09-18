@@ -35,8 +35,8 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/introLoader.min.css">
-    <link rel="stylesheet" href="css/jui.css" /> 
-    <link rel="stylesheet" href="css/jennifer.theme.css" /> 
+    <link rel="stylesheet" href="jui.css" /> 
+    <link rel="stylesheet" href="jennifer.theme.css" /> 
     <script src="js/skel.min.js"></script>
 	<script src="js/skel-layers.min.js"></script>
 	<script src="js/init.js"></script>
@@ -113,7 +113,7 @@
 });
   </script>		
 		<!-- Main -->
-			<section id="one" style="background-color:#f9f9f9;" class="wrapper">
+<section id="one" style="background-color:#f9f9f9;" class="wrapper">
 <header class="major">					
 <?php
      $sql = "SELECT * FROM valid_path where path ='$input[1]_$output[1]' limit 1";
@@ -152,7 +152,6 @@
 				
 
 <div class="wrapper">
-<!----------------------------------------------------------------삽입--------------------> 
 <div class="row 150%">
 
 <div class="8u 12u$(medium)">
@@ -186,7 +185,7 @@
           </div>
 
     </div><!-- a div close-->
-  <?php $filepath = "/your 712 folder path/json/".$input[1]."_".$output[1].".json";
+  <?php $filepath = "json/".$input[1]."_".$output[1].".json";
   if(file_exists($filepath))
   {
     echo '<script type="text/javascript" src="js/path.js"></script>';
@@ -673,7 +672,7 @@
           echo "      <td>" . $row["nadh"] . "</td>";
           echo "      <td>" . $row["nadph"] . "</td>";
           echo "      <td>" . $row["net_name"] . "</td>";
-          echo "      <td>" . $row["#reactions"] . "</td>";
+          echo "      <td>" . $row["reaction"] . "</td>";
           echo "    </tr>";
         }
         echo "  </tbody>";
@@ -762,7 +761,7 @@
           echo "      <td>" . $row["nadph"] . "</td>";
           echo "      <td>" . $row["co2"] . "</td>";
           echo "      <td>" . $row["net_name"] . "</td>";
-          echo "      <td>" . $row["#reactions"] . "</td>";
+          echo "      <td>" . $row["reaction"] . "</td>";
           echo "    </tr>";
         }
         echo "  </tbody>";
@@ -856,7 +855,7 @@
           echo "      <td>" . $row["nadph"] . "</td>";
           echo "      <td>" . $row["co2"] . "</td>";
           echo "      <td>" . $row["net_name"] . "</td>";
-          echo "      <td>" . $row["#reactions"] . "</td>";
+          echo "      <td>" . $row["reaction"] . "</td>";
           echo "    </tr>";
         }
         echo "  </tbody>";
@@ -951,7 +950,7 @@
           echo "      <td>" . $row["nadph"] . "</td>";
           echo "      <td>" . $row["co2"] . "</td>";
           echo "      <td>" . $row["net_name"] . "</td>";
-          echo "      <td>" . $row["#reactions"] . "</td>";
+          echo "      <td>" . $row["reaction"] . "</td>";
           echo "    </tr>";
         }
         echo "  </tbody>";

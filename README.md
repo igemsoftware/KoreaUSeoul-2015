@@ -127,11 +127,11 @@ alter table path_score_table add index index1(path);
  2) Extract files from the archive to where you want to hold the server files.
 
   If you are using a terminal, just write down the commands below.
- 
+ ```
   wget https://compbio.korea.ac.kr/712/download/  [file_name]
   
   unzip [file_name]
- 
+ ```
   - [file_name] list
   - JSON_files -> JSON_files_release_v1.0.tar.gz
   - TSV files ->

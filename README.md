@@ -49,6 +49,8 @@ If you want to host a seperate copy of the server, Follow the instructions below
  -`name_to_C.tsv` : : tsv for auto complete. 
 
  -`tsv/(C number)_(C number).tsv` `tsv/(start compound)_(end compound).tsv` : tsv that contains the quantity of change of each reaction.
++ __BioBrick__
++ __Gene_download__
 + __graph.php__ : Receives the data entered by the user and shows the results through json, js, tsv, mySQL. 
 
 + __index.html__

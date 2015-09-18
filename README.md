@@ -128,8 +128,7 @@ alter table path_score_table add index index1(path);
 
   If you are using a terminal, just write down the commands below.
  ```
-  wget https://compbio.korea.ac.kr/712/download/  [file_name]
-  
+  wget https://compbio.korea.ac.kr/712/download/[file_name]
   unzip [file_name]
  ```
   - [file_name] list

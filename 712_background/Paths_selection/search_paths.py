@@ -82,8 +82,7 @@ def run_networkx(networkx_cutoff, compound_pairs, edge_list, root_dir):
 		compound = sorted(compound)
 		G=nx.Graph()
 		G.add_edges_from(edge_list)
-		paths = nx.all_simple_paths(G, source='C13482', target='C19621', cutoff=networkx_cutoff)
-		#paths = nx.all_simple_paths(G, source=compound[0], target=compound[1], cutoff=networkx_cutoff)
+		paths = nx.all_simple_paths(G, source=compound[0], target=compound[1], cutoff=networkx_cutoff)
 		list_paths = list(paths)
 		if list_paths == []:
 			continue

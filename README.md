@@ -50,9 +50,13 @@ If you want to host a seperate copy of the server, Follow the instructions below
 
  -`tsv/(C number)_(C number).tsv` `tsv/(start compound)_(end compound).tsv` : tsv that contains the quantity of change of each reaction.
 + __BioBrick__
- -` (organism ID):(Gene ID).html` : html that connect 
+
+ -` (organism ID):(Gene ID).html` : html that connect the gene information and biobrick
+
 + __Gene_download__
- -`(R number).html` 
+
+ -`(R number).html` : html that contains gene information corresponding to the Reaction
+
 + __graph.php__ : Receives the data entered by the user and shows the results through json, js, tsv, mySQL. 
 
 + __index.html__
